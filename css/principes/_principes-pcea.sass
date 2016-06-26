@@ -6,6 +6,7 @@
   color: $bleu-lavande
   text-align: center
   padding: 30px
+  overflow: hidden
   h2
     text-transform: uppercase
 
@@ -27,12 +28,18 @@
         position: relative
         top: 30px
         height: 400px
+        @media (max-width: 775px)
+          position: relative
+          top: 200px
     .principes-pcea-text
       width: 80%
       h4
         color: $bleu-lavande
       p
         text-align: justify
+        @media (max-width: $iphone)
+          width: 80vw
+          margin-bottom: 60px
       li
         text-align: left
         text-transform: uppercase
@@ -43,6 +50,8 @@
           size: 20px
           family: $Opensans
         color: $bleu-lavande
+        @media (max-width: $iphone)
+          font-size: 16px
         &::before
           content: ""
           display: inline-block
