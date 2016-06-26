@@ -53,6 +53,9 @@
     .floater-right {
       width: 100%;
       float: none; } }
+  @media (max-width: 775px) {
+    .floater-right {
+      padding-top: 70px; } }
 
 .who .who-flex [class*="who-item"]:hover .who-overlay {
   -webkit-animation: bounce 750ms linear both;
@@ -256,6 +259,9 @@ header {
   @media (max-width: 600px) {
     header {
       -webkit-backdrop-filter: none; } }
+  @media (max-width: 775px) {
+    header {
+      height: 70px; } }
   header nav {
     float: right;
     margin-right: 30px; }
@@ -323,6 +329,9 @@ header {
   background-color: rgba(109, 158, 225, 0.8);
   backdrop-filter: blur(5px);
   z-index: 23; }
+  @media (max-width: 775px) {
+    .back-header {
+      height: 70px; } }
 
 .menu {
   z-index: 26;
@@ -364,7 +373,8 @@ header {
 #trigger-box {
   display: none; }
   #trigger-box:checked ~ .menu {
-    height: 50%; }
+    height: 60%;
+    padding-top: 90px; }
   #trigger-box:checked + .trigger {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
@@ -376,7 +386,7 @@ header {
   right: 10px;
   margin-top: 0px;
   padding: 0px;
-  line-height: 90px;
+  line-height: 70px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 25px;
   z-index: 28;
@@ -412,6 +422,9 @@ header {
     clear: both;
     content: "";
     display: table; }
+  @media (max-width: 775px) {
+    .blue-header {
+      height: 70px; } }
 
 @media (max-width: 400px) {
   #trigger-box:checked ~ .menu {
@@ -1747,6 +1760,9 @@ footer {
   top: 90px;
   overflow: hidden;
   margin-bottom: 90px; }
+  @media (max-width: 775px) {
+    .glossaire-header {
+      top: 70px; } }
   .glossaire-header .glossaire-img {
     position: absolute;
     top: 50%;
@@ -2101,6 +2117,9 @@ input[id*=rg] {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  @media (max-width: 775px) {
+    .benefices-jumbo {
+      top: 70px; } }
   .benefices-jumbo h1 {
     position: relative;
     color: white;
@@ -2512,13 +2531,13 @@ input[id*=rg] {
     -moz-flex-direction: row;
     flex-direction: row;
     -ms-flex-direction: row;
-    -webkit-box-lines: no-wrap;
-    -moz-box-lines: no-wrap;
-    box-lines: no-wrap;
-    -webkit-flex-wrap: no-wrap;
-    -moz-flex-wrap: no-wrap;
-    -ms-flex-wrap: no-wrap;
-    flex-wrap: no-wrap;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -moz-box-pack: justify;
     box-pack: justify;
@@ -2535,6 +2554,11 @@ input[id*=rg] {
       width: 60%;
       height: auto; }
 
+@media (max-width: 775px) {
+  .principes-images .principes-images-flexbox .principes-image-rachis {
+    width: 90%; }
+  .principes-images .principes-images-flexbox .principes-image-anat {
+    width: 100%; } }
 .principes-video {
   width: 100%;
   padding: 50px;

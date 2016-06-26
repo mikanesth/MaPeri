@@ -16,6 +16,8 @@ header
 	+clearfix
 	@media (max-width: 600px)
 		-webkit-backdrop-filter: none
+	@media (max-width: 775px)
+		height: 70px
 
 	nav
 		float: right
@@ -83,6 +85,8 @@ header
 	background-color: $bleu-lavande-blur
 	backdrop-filter: blur(5px)
 	z-index: 23
+	@media (max-width: 775px)
+		height: 70px
 
 .menu
 	z-index: 26
@@ -124,7 +128,8 @@ header
 
 	&:checked
 		~ .menu
-			height: 50%
+			height: 60%
+			padding-top: 90px
 		+ .trigger
 			text-decoration: none
 			color: rgba(0,0,0,0.7)
@@ -137,7 +142,7 @@ header
 	right: 10px
 	margin-top: 0px
 	padding: 0px
-	line-height: 90px
+	line-height: 70px
 	color: rgba(255, 255, 255, 0.5)
 	font-size: 25px
 	z-index: 28
@@ -173,6 +178,8 @@ header
 	z-index: 25
 	backdrop-filter: blur(5px)
 	+clearfix
+	@media (max-width: 775px)
+		height: 70px
 
 @media (max-width: 400px)
 	#trigger-box:checked ~ .menu
