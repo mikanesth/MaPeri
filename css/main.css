@@ -2865,3 +2865,19 @@ input[id*=rg] {
     color: rgba(0, 0, 0, 0.3); }
   .nous-team .col-sm-9 p {
     font-family: "Open sans", sans-serif; }
+
+.resultats {
+  width: 100%;
+  padding: 90px 0 30px 0;
+  position: relative; }
+  .resultats h1 {
+    padding-top: 30px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: -30px;
+    color: #6d9ee1;
+    text-transform: uppercase; }
+  .resultats #tipue_search_content {
+    max-width: 70%;
+    margin: auto; }
