@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+		<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.css" type="text/css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<link rel="prefetch" href="images/zoom.png">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Déroulement - MaPéri</title>
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.2/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.2/pannellum.js"></script>
+  </head>
+  <body>
+    <header class="blue-header">
+			<a href="index.html"><img class="logo img-circle" src="img/logo2.png"/></a>
+			<nav>
+				<a id="drop" href="#">Informations péridurale <span style="font-size: 12px;">▼</span></a>
+				<div class="drop-menu">
+					<a href="principes.html">Principes</a>
+					<a href="deroulement.html">Déroulement</a>
+					<a href="benefices.html">Bénéfices</a>
+					<a href="risques.html">Risques</a>
+				</div>
+				<a href="faq.html">Idées recues</a>
+				<a href="glossaire.html">Glossaire</a>
+				<a href="nous.html">Qui sommes nous</a>
+
+			</nav>
+		</header>
+
+
+		<input type="checkbox" id="trigger-box">
+		<label for="trigger-box" class="trigger">☰</label>
+
+		<div class="menu">
+			<a href="index.html"><img class="logo img-circle" src="img/logo_menu.png"/></a>
+			<h3 class="menu-title">- Ma Peri -</h3>
+		    <div class="cont">
+		      <ul>
+		        <!--<li><a href="index.html">Accueil</a></li><br/>-->
+		        <li><a href="principes.html">Principes</a></li><br/>
+						<li><a href="deroulement.html">Deroulement</a></li><br/>
+		        <li><a href="benefices.html">Bénéfices</a></li><br/>
+						<li><a href="risques.html">Risques</a></li><br/>
+		        <li><a href="faq.html">Idées reçues</a></li><br/>
+						<li><a href="glossaire.html">Glossaire</a></li><br/>
+						<li><a href="nous.html">Qui sommes nous ?</a></li>
+		      </ul>
+		    </div>
+		</div>
+
+    <!-- ====================== SIDEBAR FLOAT LEFT ==================-->
+    <div class="sidebar">
+      <ul class="sidebar-menu">
+        <li class="sidebar-item"><a href="index.html">Accueil</a></li>
+        <li class="sidebar-item"><a href="principes.html">Principes</a></li>
+        <li class="sidebar-item"><a href="#">Déroulement</a></li>
+        <li class="sidebar-item"><a href="benefices.html">Bénéfices /risques</a></li>
+        <li class="sidebar-item"><a href="faq.html">Idées reçues</a></li>
+      </ul>
+    </div>
+    <!-- ====================== FIN SIDEBAR ==================-->
+
+    <div class="floater-right">
+
+    <!-- ===================== SECTION CHECKLIST ==================-->
+      <section class="checklist">
+        <img id="bg-checklist" src="img/bg_welcome.jpg" height="1900" width="1250">
+        <h1>Check-list</h1>
+        <div class="container cont-checklist">
+          <div class="col-sm-6">
+            <ul>
+              <li>Avoir eu sa cs d'anesthesie</li>
+              <li>Disponibilité de l'équipe d'anesthesie</li>
+              <li>Salle équipée pour l'anesthésie</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul>
+              <li>Pas de troubles de la coagulaiton</li>
+              <li>Pas d'infection</li>
+              <li>Pas d'autres contres indications</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <!-- ===================== FIN SECTION CHECKLIST ==================-->
+
+
+      <section class="VR-cont">
+        <div class="bg-wrap"></div>
+        <div class="VR-left">
+          <h2>Decouvrez votre salle d'accouchement</h2>
+          <p>Les sons</p>
+          <p>Les objets</p>
+        </div>
+        <div class="VR-right">
+          <div id="panorama"></div>
+        </div>
+      </section>
+
+    <!-- ===================== FIN SECTION PHOTO 3D ==================-->
+      <section class="who">
+        <div class="who-triangle"></div>
+        <h3>Qui sera là ?</h3>
+        <div class="who-flex">
+          <div class="who-item1">
+            <div class="who-overlay">
+              <h4 style="color: black">Médecin Anesthésiste</h4>
+              <p>Seul personne habilité à réaliser un geste d'analgésie péridurale,
+                il sera présent pour la pose et "l'induction" de l'analgésie.
+                Il ne sera pas présent tout au long du travail mais disponible
+                en cas d'urgence.</p>
+            </div>
+            <img class="who-img" src="img/icon/fa-user-md.svg"></img>
+            <p>Médecin anesthésiste</p>
+          </div>
+          <div class="who-item2">
+            <div class="who-overlay">
+              <h4 style="color: black">Votre Sage Femme</h4>
+              <p>Présent(e) la plupart du temps lors de la pose pour vous soutenir
+              votre sage femme sera surtout à vos côté tout au long du travail et
+              de l'accouchement.</p>
+            </div>
+            <img class="who-img" src="img/icon/fa-user.svg"></img>
+            <p>Votre Sage-Femme</p>
+          </div>
+          <div class="who-item3">
+            <div class="who-overlay">
+              <h4 style="color: black">Infirmier Anesthésiste</h4>
+              <p>Présent(e) la plupart du temps lors de la pose pour assister le
+              médecin anesthésiste ou réaliser l'induction en sa présence l'infirmier
+              anesthésiste viendra réévaluer votre analgésie au cours du travail.</p>
+            </div>
+            <img class="who-img" src="img/icon/fa-user.svg"></img>
+            <p>Infirmier anesthésiste</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== FIN SECTION QUI SERA LA ==================-->
+      <section class="video-deroulement">
+        <h3>video déroulement</h3>
+        <video poster="" controls="true" >
+          <source src="img/video/deroulement-total.mp4" type="video/mp4">
+        </video>
+      </section>
+        <!-- ============ FIN SECTION VIDEO POSE ==================-->
+      <section class="feeling">
+        <div class="feeling-triangle"></div>
+        <h3>sensations frequemment ressenties</h3>
+        <em>survolez pour plus de détails</em>
+        <div class="feeling-icon-container">
+          <span id="feeling-icon1" class="fa fa-bolt"></span>
+          <span id="feeling-icon2"class="fa fa-diamond"></span>
+          <span id="feeling-icon3" class="fa fa-heartbeat"></span>
+          <span id="feeling-icon4" class="fa fa-pause"></span>
+          <span id="feeling-icon5" class="fa fa-tachometer"></span>
+          <div class="feeling-icon1-text">
+            <h4>Paresthésies</h4>
+            <p>Sensations de decharges electriques, le plus souvent
+              temporaire sans consequence et ne durant que quelques secondes
+              elles correspondent au contact avec un peit nerf lombaire
+            </p>
+          </div>
+          <div class="feeling-icon2-text">
+            <h4>Paresthésies</h4>
+            <p>Sensations de decharges electriques, le plus souvent
+              temporaire sans consequence et ne durant que quelques secondes
+              elles correspondent au contact avec un peit nerf lombaire
+            </p>
+          </div>
+          <div class="feeling-icon3-text">
+            <h4>Paresthésies</h4>
+            <p>Sensations de decharges electriques, le plus souvent
+              temporaire sans consequence et ne durant que quelques secondes
+              elles correspondent au contact avec un peit nerf lombaire
+            </p>
+          </div>
+          <div class="feeling-icon4-text">
+            <h4>Perte sensation des contractions</h4>
+            <p>Sensations de decharges electriques, le plus souvent
+              temporaire sans consequence et ne durant que quelques secondes
+              elles correspondent au contact avec un peit nerf lombaire
+            </p>
+          </div>
+          <div class="feeling-icon5-text">
+            <h4>Paresthésies</h4>
+            <p>Sensations de decharges electriques, le plus souvent
+              temporaire sans consequence et ne durant que quelques secondes
+              elles correspondent au contact avec un peit nerf lombaire
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FIN SECTION SENSATIONS FREQUENTES ========-->
+      <section class="sensations">
+        <h3>Délais d'installation // effets de la péridurale</h3>
+        <div class="sensations-flex">
+          <div class="sensations-clock">
+            <img src="img/icon/clock2.svg">
+          </div>
+          <div class="sensations-text">
+            <p>Temps de Préparation (10 min)</p>
+            <p>Réalisation de la péridurale (5-15 min)</p>
+            <p>Délai d'action de la péridurale (15-20 min)</p>
+          </div>
+        </div>
+      </section>
+      <!-- ===================== FIN DELAI INSTALLATION ==================-->
+
+      <section class="pain-evolution">
+        <p style="max-width: 1000px; margin: auto; color: rgba(0,0,0,0.7); margin-bottom: 40px">Vous pouvez dans cette partie en cliquant sur "simuler pose de péridurale" vous représenter l'évolution des douleurs attendue avec la pose de votre péridurale. Ces données reposent sur une étude réalisée
+        au CHU de Tours auprès de femmes enceintes comme vous. Elle représentent les douleurs cotées sur une échelle de 0 à 10 et leur évolution avec la péridurale. </p>
+        <label for="pain-check" class="pain-trigger">Simuler pose de péridurale</label>
+        <div class="pain-content">
+          <input type="checkbox" id="pain-check" class="pain-check">
+
+          <div class="pain-box">
+            <p>Toucher vaginal</p>
+            <div class="pain-bar-tv"></div>
+            <p>Pose de voie veineuse</p>
+            <div class="pain-bar-vvp"></div>
+            <p>Pose de péridurale</p>
+            <div class="pain-bar-peri"></div>
+          </div>
+
+          <div class="pain-box">
+            <p>Contractions utérines</p>
+            <div class="pain-bar-cont"></div>
+            <p>Efforts expulsifs</p>
+            <div class="pain-bar-exp"></div>
+            <p>Suture épisiotomie</p>
+            <div class="pain-bar-episio"></div>
+          </div>
+        </div>
+        <p class="maj">Mise à jour le 15/06/2016</p>
+      </section>
+
+      <!-- ============ FIN SECTION EVOLUTION interactive DOULEURS ==================-->
+
+      <footer>
+				<div class="footer-back">
+					<div class="footer-blur">
+						<div class="footer-logo"></div>
+						<nav class="footer-nav">
+							<a href="">Principes</a>
+							<a href="deroulement.html">Déroulement</a>
+							<a href="">Avantages / risques</a>
+							<a href="faq.html">Idees Reçues</a>
+							<a href="">Glossaire</a>
+						</nav>
+					</div>
+					<p>Copyright &copy; to Mikael Perin - 2016</p>
+				</div>
+			</footer>
+    </div>
+    <script>
+      pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "img/panorama.jpg",
+        "autoLoad": true,
+        "hotSpots": [
+            {
+                 "pitch": -5,
+                 "yaw": 280,
+                 "type": "info",
+                 "text": "Scope Anesthesie present pour votre surveillance pendant le geste, vous pouvez ecouter le bruit a gauche de l'image",
+                 "URL": ""
+            },
+            {
+                 "pitch": -8.4,
+                 "yaw": 232.6,
+                 "type": "info",
+                 "text": "Tocometre"
+            },
+            {
+                 "pitch": -0.9,
+                 "yaw": 144.4,
+                 "type": "info",
+                 "text": "Mur dont on ne sait rien"
+            }
+        ]
+      });
+    </script>
+  </body>
+</html>

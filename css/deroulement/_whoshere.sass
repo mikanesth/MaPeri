@@ -1,0 +1,63 @@
+.who
+  text-align: center
+  margin: 0
+  position: relative
+  overflow: hidden
+  padding-bottom: 100px
+
+  .who-triangle
+    position: absolute
+    +size(2000px)
+    background: $bleu-lavande
+    transform: rotate(87deg)
+    top: 80%
+
+  h3
+    text-transform: uppercase
+    color: $bleu-lavande
+
+  .who-flex
+    margin: auto
+    max-width: 85%
+    +display(flex)
+    +flex-wrap(wrap)
+    +justify-content(space-around)
+    +align-items(center)
+
+    [class*="who-item"]
+      width: 33%
+      height: 100%
+      color: $bleu-lavande
+      position: relative
+      
+      &:hover
+        .who-overlay
+          @extend %bounce
+      @media(max-width: 600px)
+        width: 100%
+
+      .who-overlay
+        +position(absolute, 0px 20% 0px 20%)
+        transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+        box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2)
+        background: transparentize($bleu-lavande, 0.1)
+        color: white
+        z-index: 10
+        border-radius: 10px
+        padding: 10px
+        @media (max-width: 600px)
+          right: 10%
+          left: 10%
+
+      .who-img
+        +size(150px)
+        padding: 20px
+        border: 3px solid $bleu-lavande
+        border-radius: 50%
+        margin-bottom: 15px
+        margin-top: 30px
+    .who-item1
+      order: 2
+
+    .who-item2
+      order: 3

@@ -1,0 +1,68 @@
+
+.principes-pcea
+  width: 100%
+  min-height: 400px
+  background: white
+  color: $bleu-lavande
+  text-align: center
+  padding: 30px
+  h2
+    text-transform: uppercase
+
+  .principes-pcea-flexbox
+    color: black
+    max-width: 90%
+    margin: auto
+    position: relative
+    max-height: 90%
+    +display(flex)
+    +flex-direction(row)
+    +flex-wrap(nowrap)
+    +justify-content(space-around)
+    +align-items(center)
+
+    .principes-pcea-image
+      width: 20%
+      img
+        position: relative
+        top: 30px
+        height: 400px
+    .principes-pcea-text
+      width: 80%
+      h4
+        color: $bleu-lavande
+      p
+        text-align: justify
+      li
+        text-align: left
+        text-transform: uppercase
+        list-style: none
+        display: block
+        margin-bottom: 10px
+        font:
+          size: 20px
+          family: $Opensans
+        color: $bleu-lavande
+        &::before
+          content: ""
+          display: inline-block
+          margin-right: 20px
+          +size(20px)
+          background: $bleu-lavande
+          border-radius: 50%
+          text-align: center
+          line-height: 20px
+          color: white
+      li:first-child::before
+        content: "1"
+      li:nth-child(2)::before
+        content: "2"
+      li:last-child::before
+        content: "3"
+  .maj
+    position: absolute
+    color: $blanc-lin
+    text-transform: uppercase
+    background: rgba(0,0,0,0.5)
+    //top: 50%
+    right: 5px

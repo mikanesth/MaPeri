@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <!-- @import "structure/head.html" -->
+  <body>
+    <!-- @import "structure/header_ailleurs.html" -->
+
+    <!-- ====================== SIDEBAR FLOAT LEFT ==================-->
+    <div class="sidebar">
+      <ul class="sidebar-menu">
+        <li class="sidebar-item"><a href="">Accueil</a></li>
+        <li class="sidebar-item"><a href="">Principes</a></li>
+        <li class="sidebar-item"><a href="">Déroulement</a></li>
+        <li class="sidebar-item"><a href="">Bénéfices /risques</a></li>
+        <li class="sidebar-item"><a href="">Idées reçues</a></li>
+      </ul>
+    </div>
+    <!-- ====================== FIN SIDEBAR ==================-->
+
+    <div class="floater-right">
+
+    <!-- ==================================================================-->
+    <!--=======================RESTE DE LA PAGE A METTRE ICI ==============
+        ====================================================================-->
+
+
+      <!-- @import "structure/footer.html" -->
+    </div>
+
+
+  </body>
+</html>

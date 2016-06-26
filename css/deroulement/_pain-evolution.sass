@@ -1,0 +1,96 @@
+.pain-evolution
+  position: relative
+  width: 100%
+  min-height: 500px
+  padding: 20px 50px 50px 50px
+  //background: rgba(100, 50, 230, 0.3)
+  text-align: center
+  overflow: hidden
+  //right: 0px
+
+  h3
+    color: $bleu-lavande
+
+  .pain-trigger
+    background: $bleu_lavande_blur
+    padding: 10px 20px 10px 20px
+    border-top-right-radius: 50px
+    border-top-left-radius: 50px
+    border-bottom-right-radius: 50px
+    border-bottom-left-radius: 50px
+    box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.2)
+    color: white
+    text-transform: uppercase
+    &:hover
+      background: $bleu-lavande
+    &:active
+      position: relative
+      top: 2px
+      left: 2px
+
+  .pain-content
+    text-align: left
+    position: relative
+    display: block
+    max-width: 1000px
+    margin: auto
+    //background: pink
+    +clearfix
+
+    .pain-box
+      position: relative
+      //border: 1px solid white
+      +display(flex)
+      +flex-direction(column)
+      +justify-content(center)
+      width: 45%
+      float: left
+      min-height: 300px
+      &:first-child
+        margin-right: 10%
+      &:last-child
+        margin-left: 10%
+
+      p
+        border-bottom: 1px solid $bleu_lavande
+        margin-bottom: 0
+        font-size: 16px
+        color: transparentize($filtre-noir, 0.2)
+        padding-bottom: 5px
+      [class*="pain-bar"]
+        margin-bottom: 15px
+        height: 10px
+        background: $bleu-lavande-blur
+        +transition(800ms ease-in)
+        box-shadow: 1px 0px 10px 0px transparentize(black, 0.85)
+      .pain-bar-episio
+        width: 85%
+      .pain-bar-tv
+        width: 80%
+      .pain-bar-cont
+        width: 80%
+      .pain-bar-peri
+        width: 30%
+      .pain-bar-vvp
+        width: 40%
+      .pain-bar-exp
+        width: 90%
+
+    .pain-check
+      display: none
+      &:checked
+        ~ .pain-box
+          .pain-bar-cont
+            width: 16%
+          .pain-bar-tv
+            width: 10%
+          .pain-bar-exp
+            width: 25%
+          .pain-bar-episio
+            width: 13%
+  .maj
+    position: absolute
+    right: 10px
+    background: transparentize($filtre-noir, 0.2)
+    color: white
+    padding: 0px 5px 0px 5px

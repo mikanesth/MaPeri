@@ -1,0 +1,89 @@
+$width: 100%
+
+.VR-cont
+  position: relative
+  width: 100%
+  min-height: 400px
+  padding: 50px
+  +display(flex)
+  +justify-content(space-between)
+  +align-items(center)
+  +flex-wrap(wrap)
+  font:
+    font-family: $Opensans
+  overflow: hidden
+
+  .bg-wrap
+    position: absolute
+    width: 100%
+    height: $width/1.5
+    background:
+      color: $bleu-lavande-blur
+    z-index: -3
+    top: 50%
+    left: 0px
+    transform: translateY(-50%)
+    box-shadow: 1px 1px 12px 0px $filtre-noir
+
+
+  .VR-right
+    width: 70%
+    margin: 0
+    padding: 0
+    height: 100%
+    @media (max-width: 600px)
+      width: 100%
+
+    #panorama
+      width: 600px
+      height: 400px
+      box-shadow: 0px 0px 10px 0px $filtre-noir
+      margin: auto
+      @media (max-width: 900px)
+        width: 400px
+        margin-right: 0px
+        margin-left: auto
+      @media (max-width: 600px)
+        width: 300px
+        height: 300px
+        margin: auto
+        margin-right: auto
+
+  .VR-left
+    display: block
+    width: 20%
+    height: 100%
+    margin: 0
+    padding: 0
+    position: relative
+    //background: pink
+    color: $filtre-blanc
+    @media (max-width: 600px)
+      width: 100%
+    h2
+      text-align: center
+      margin: none
+      margin-bottom: 30px
+
+    p
+      text-align: center
+      font-size: 15px
+      border-bottom: 1px solid $filtre-blanc
+      margin-bottom: 20px
+      //line-height: 30px
+    p:nth-child(2)
+      text-align: left
+      //position: relative
+      //left: -30px
+    p:nth-child(3)
+      //position: relative
+      //left: 30px
+      text-align: right
+    p:nth-child(4)
+      //position: relative
+      //left: -40px
+      text-align: left
+    p:nth-child(5)
+      //position: relative
+      //eft: 40px
+      text-align: right

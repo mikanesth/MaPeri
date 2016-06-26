@@ -1,0 +1,59 @@
+.presentation
+	margin: 0
+	position: relative
+	background:
+		color: $blanc-lin
+	min-width: 100%
+	top: 90px
+	text-align: center
+	padding: 50px
+	//z-index: 24
+	+clearfix
+	
+	h3
+		font-size: 30px
+		color: $bleu-lavande
+		text-transform: uppercase
+		margin-bottom: 30px
+	
+	.pres-flex
+		max-width: 1100px
+		margin: auto
+		+display(flex)
+		+justify-content(space-between)
+		+flex-wrap(nowrap)
+		
+		@media (max-width: 900px)
+			+flex-wrap(wrap)
+			+justify-content(center)
+		
+	p 
+		display: block
+		float: left
+		text-align: justify
+		letter-spacing: 1px
+		line-height: 40px
+		max-width: 550px
+		
+		@media (max-width: 380px)
+			font-size: 16px
+			line-height: 30px
+		
+		&:first-letter
+			text-transform: uppercase
+			font-size: 30px
+			color: $bleu-lavande
+			font-weight: 600	
+		span
+			color: $bleu-lavande
+			font-weight: 800
+	
+	img
+		display: block
+		float: left
+		margin-left: 30px
+		
+
+		
+	
+		

@@ -1,0 +1,83 @@
+.welcome
+	z-index: 24
+	margin-bottom: -90px
+	position: relative
+	text-align: center
+	padding: 50px
+	background:
+		image: url(../img/bg_welcome.jpg)
+		size: cover
+		repeat: no-repeat
+	height: 50rem
+	overflow: hidden
+
+	.blur
+		z-index: 15
+		position: absolute
+		top: 0px
+		bottom: 0px
+		right: 0px
+		left: 0px
+		background: rgba(0,0,0,0.4)
+		backdrop-filter: blur(10px)
+	h1
+		display: block
+		padding: 10px
+		width: 30%
+		height: 20%
+		z-index: 17
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		border: solid white 4px
+		color: white
+		text-transform: uppercase
+		letter-spacing: 1rem
+		@media (max-width: 700px)
+			width: 50%
+	p
+
+		position: absolute
+		z-index: 17
+		//background: pink
+		left: 50%
+		margin-left: -60px
+		top: 60%
+		color: white
+
+	img
+		position: absolute
+		z-index: 17
+		+size(100px 50px)
+		top: 70%
+		left: 50%
+		margin-left: -50px
+		//background: pink
+
+@media screen and (max-width: 1350px)
+	.welcome
+		h1
+			height: auto
+			font-size: 40px
+
+@media (max-width: 1100px)
+	.welcome
+		h1
+			font-size: 30px
+			padding: 10px
+
+@media (max-width: 380px)
+	.welcome
+		background-size: 100% 100%
+		background-image: url(../img/bg_welcome.jpg)
+		background-repeat: no-repeat
+
+
+	.welcome
+		h1
+			height: auto
+			padding: 10px
+			width: 52%
+			font-size: 25px
+			padding: 10px

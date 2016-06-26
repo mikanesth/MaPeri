@@ -1,0 +1,41 @@
+.sidebar
+  font-family: $Opensans
+  position: fixed
+  top: 90px
+  padding-top: 100px
+  height: 100%
+  width: 10%
+  background:
+    color: transparentize($blanc-lin, 0.2)
+  @media (max-width: 1000px)
+    display: none
+
+  .sidebar-menu
+    padding: 0
+    margin: 0
+
+
+    .sidebar-item
+      width: 80%
+      margin: auto
+      text-align: center
+      list-style: none
+      line-height: 30px
+      a
+        text-decoration: none
+        color: transparentize($filtre-noir, 0.3)
+        &:hover
+          color: black
+      &:nth-child(3)
+        color: black
+        border: 1px solid $filtre-noir
+        a
+          color: black
+
+.floater-right
+  width: 90%
+  float: right
+  padding-top: 90px
+  @media (max-width: 1000px)
+    width: 100%
+    float: none

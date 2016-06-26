@@ -1,0 +1,525 @@
+$width: 100%
+.checklist
+  font-family: $Opensans
+  position: relative
+  padding: 0
+  margin: 0
+  width: 100%
+  height: 500px
+  overflow: hidden
+  padding: 50px
+  +clearfix
+
+  #bg-checklist
+    z-index: -10
+    +position(absolute, 0px 0px 0px 0px)
+    min-width: 100%
+    min-height: 100%
+    filter: contrast(0.3)
+  h1
+    text-transform: uppercase
+    text-align: center
+    max-width: 30%
+    margin: auto
+    padding: 10px 0 10px 0
+    border: 2px solid rgba(255,255,255,0.7)
+    color: $blanc-clair
+  .cont-checklist
+    max-width: 1000px
+    margin: auto
+    //background: pink
+    text-align: center
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    ul
+      padding: 0
+      margin: 0
+      li
+        list-style: none
+        line-height: 70px
+        font-size: 25px
+        font-family: $Opensans
+        color: $blanc-clair
+
+
+.VR-cont
+  position: relative
+  width: 100%
+  min-height: 400px
+  padding: 50px
+  +display(flex)
+  +justify-content(space-between)
+  +align-items(center)
+  +flex-wrap(wrap)
+  font:
+    font-family: $Opensans
+  overflow: hidden
+
+  .bg-wrap
+    position: absolute
+    width: 100%
+    height: $width/1.5
+    background:
+      color: $bleu-lavande-blur
+    z-index: -3
+    top: 50%
+    left: 0px
+    transform: translateY(-50%)
+    box-shadow: 1px 1px 12px 0px $filtre-noir
+
+
+  .VR-right
+    width: 70%
+    margin: 0
+    padding: 0
+    height: 100%
+    @media (max-width: 600px)
+      width: 100%
+
+    #panorama
+      width: 600px
+      height: 400px
+      box-shadow: 0px 0px 10px 0px $filtre-noir
+      margin: auto
+      @media (max-width: 900px)
+        width: 400px
+        margin-right: 0px
+        margin-left: auto
+      @media (max-width: 600px)
+        width: 300px
+        height: 300px
+        margin: auto
+        margin-right: auto
+
+  .VR-left
+    display: block
+    width: 20%
+    height: 100%
+    margin: 0
+    padding: 0
+    position: relative
+    //background: pink
+    color: $filtre-blanc
+    @media (max-width: 600px)
+      width: 100%
+    h2
+      text-align: center
+      margin: none
+      margin-bottom: 30px
+
+    p
+      text-align: center
+      font-size: 15px
+      border-bottom: 1px solid $filtre-blanc
+      margin-bottom: 20px
+      //line-height: 30px
+    p:nth-child(2)
+      text-align: left
+      //position: relative
+      //left: -30px
+    p:nth-child(3)
+      //position: relative
+      //left: 30px
+      text-align: right
+    p:nth-child(4)
+      //position: relative
+      //left: -40px
+      text-align: left
+    p:nth-child(5)
+      //position: relative
+      //eft: 40px
+      text-align: right
+
+.pain-evolution
+  position: relative
+  width: 100%
+  min-height: 500px
+  padding: 20px 50px 50px 50px
+  //background: rgba(100, 50, 230, 0.3)
+  text-align: center
+  overflow: hidden
+  //right: 0px
+
+  h3
+    color: $bleu-lavande
+
+  .pain-trigger
+    background: $bleu_lavande_blur
+    padding: 10px 20px 10px 20px
+    border-top-right-radius: 50px
+    border-top-left-radius: 50px
+    border-bottom-right-radius: 50px
+    border-bottom-left-radius: 50px
+    box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.2)
+    color: $blanc-lin
+    text-transform: uppercase
+    &:hover
+      background: $bleu-lavande
+    &:active
+      position: relative
+      top: 2px
+      left: 2px
+
+  .pain-content
+    text-align: left
+    position: relative
+    display: block
+    max-width: 1000px
+    margin: auto
+    //background: pink
+    +clearfix
+
+    .pain-box
+      position: relative
+      //border: 1px solid white
+      +display(flex)
+      +flex-direction(column)
+      +justify-content(center)
+      width: 45%
+      float: left
+      min-height: 300px
+      &:first-child
+        margin-right: 10%
+      &:last-child
+        margin-left: 10%
+
+      p
+        border-bottom: 1px solid $bleu_lavande
+        margin-bottom: 0
+        font-size: 16px
+        color: transparentize($filtre-noir, 0.2)
+        padding-bottom: 5px
+      [class*="pain-bar"]
+        margin-bottom: 15px
+        height: 10px
+        background: $bleu-lavande-blur
+        +transition(800ms ease-in)
+        box-shadow: 1px 0px 10px 0px transparentize(black, 0.85)
+      .pain-bar-episio
+        width: 85%
+      .pain-bar-tv
+        width: 80%
+      .pain-bar-cont
+        width: 80%
+      .pain-bar-peri
+        width: 30%
+      .pain-bar-vvp
+        width: 40%
+      .pain-bar-exp
+        width: 90%
+
+    .pain-check
+      display: none
+      &:checked
+        ~ .pain-box
+          .pain-bar-cont
+            width: 16%
+          .pain-bar-tv
+            width: 10%
+          .pain-bar-exp
+            width: 25%
+          .pain-bar-episio
+            width: 13%
+
+.who
+  text-align: center
+  margin: 0
+  position: relative
+  overflow: hidden
+  padding-bottom: 100px
+
+  .who-triangle
+    position: absolute
+    +size(2000px)
+    background: $bleu-lavande
+    transform: rotate(87deg)
+    top: 80%
+
+  h3
+    text-transform: uppercase
+    color: $bleu-lavande
+
+  .who-flex
+    margin: auto
+    max-width: 85%
+    +display(flex)
+    +flex-wrap(wrap)
+    +justify-content(space-around)
+    +align-items(center)
+
+    [class*="who-item"]
+      width: 33%
+      height: 100%
+      color: $bleu-lavande
+      position: relative
+      //overflow: hidden
+      &:hover
+        .who-overlay
+          @extend %bounce
+      @media(max-width: 600px)
+        width: 100%
+        //height: 33%
+      //background-color: pink
+
+      .who-overlay
+        +position(absolute, 0px 20% 0px 20%)
+        transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+        box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2)
+        background: transparentize($bleu-lavande, 0.1)
+        color: white
+        z-index: 10
+        border-radius: 10px
+        padding: 10px
+        @media (max-width: 600px)
+          right: 10%
+          left: 10%
+
+      .who-img
+        +size(150px)
+        padding: 20px
+        border: 3px solid $bleu-lavande
+        border-radius: 50%
+        margin-bottom: 15px
+        margin-top: 30px
+    .who-item1
+      order: 2
+
+    .who-item2
+      order: 3
+.sensations
+  position: relative
+  text-align: center
+  margin: 0
+  padding: 30px 30px 0px 30px
+  width: 100%
+  min-height: 300px
+
+  h3
+    margin-bottom: 60px
+    text-transform: uppercase
+    color: $bleu-lavande
+
+  .sensations-flex
+    margin: auto
+    max-width: 1000px
+    min-height: 300px
+    position: relative
+    +display(flex)
+    +justify-content(space-around)
+    +align-items(stretch)
+    +flex-direction(row)
+    +flex-wrap(wrap)
+
+    .sensations-clock
+      width: 60%
+      position: relative
+
+      img
+        +size(200px)
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+    .sensations-text
+      width: 40%
+      position: relative
+      font-size: 18px
+      color: transparentize($filtre-noir, 0.2)
+      border-radius: 10px
+      padding: 50px 0 50px 20px
+      +display(flex)
+      +flex-direction(column)
+      +justify-content(space-around)
+      +align-items(flex-start)
+
+      //background: pink
+
+      p:first-child::before
+        content: ""
+        position: absolute
+        left: -30px
+        //top: 33%
+        //transform: translateY(-50%)
+        display: block
+        background: $bleu-lavande
+        border-radius: 50%
+        +size(30px)
+
+
+      p:nth-child(2)::before
+        content: ""
+        position: absolute
+        left: -30px
+        //top: 33%
+        //transform: translateY(-50%)
+        display: block
+        background: $vert-atom
+        border-radius: 50%
+        +size(30px)
+      p:last-child::before
+        content: ""
+        position: absolute
+        left: -30px
+        //top: 33%
+        //transform: translateY(-50%)
+        display: block
+        background: $jaune
+        border-radius: 50%
+        +size(30px)
+
+// Partie vidéo déroulement
+
+.video-deroulement
+  position: relative
+  background:
+    color: $bleu-lavande
+  width: 100%
+  height: 300px
+  padding: 0px 30px 0px 30px
+  text-align: center
+  overflow: hidden
+
+  h3
+    color: $filtre-blanc
+    text-transform: uppercase
+    margin-bottom: 30px
+  .video-deroulement-video
+    margin: auto
+    height: 150px
+    width: 300px
+    background: lightgrey
+
+// Début de la partie sensations ressenties
+
+.feeling
+  width: 100%
+  min-height: 400px
+  position: relative
+  padding: 0px 30px 30px 30px
+  overflow: hidden
+  text-align: center
+  background: $bleu-lavande
+
+  .feeling-triangle
+    position: absolute
+    +size(2000px)
+    background: white
+    transform: rotate(87deg)
+    top: 80%
+    z-index: 0
+
+  h3
+    text-transform: uppercase
+    color: $filtre-blanc
+    margin-bottom: 5px
+    text-align: center
+    line-height: 90px
+  em
+    color: $filtre-blanc
+    position: relative
+    top: -35px
+    font-size: 12px
+  .feeling-icon-container
+    max-width: 1000px
+    margin: auto
+    min-height: 200px
+
+    span
+      display: inline-block
+      margin:
+        right: 40px
+        left: 40px
+      font-size: 40px
+      color: transparentize(black, 0.5)
+      //background: blue
+      border-radius: 50%
+      margin-bottom: 30px
+
+    .feeling-icon1-text
+      display: block
+      width: 100%
+      height: 0px
+      background: transparentize(white, 0.9)
+      +transition(800ms)
+      overflow: hidden
+      z-index: 10
+    .feeling-icon2-text
+      background: transparentize(white, 0.9)
+      display: block
+      width: 100%
+      height: 0px
+      //background: lightblue
+      +transition(800ms)
+      overflow: hidden
+    .feeling-icon3-text
+      background: transparentize(white, 0.9)
+      display: block
+      width: 100%
+      height: 0px
+      //background: lightblue
+      +transition(800ms)
+      overflow: hidden
+    .feeling-icon4-text
+      background: transparentize(white, 0.9)
+      display: block
+      width: 100%
+      height: 0px
+      //background: lightblue
+      +transition(800ms)
+      overflow: hidden
+    .feeling-icon5-text
+      background: transparentize(white, 0.9)
+      display: block
+      width: 100%
+      height: 0px
+      //background: lightblue
+      +transition(800ms)
+      overflow: hidden
+
+    #feeling-icon1:hover
+      color: black
+      ~ .feeling-icon1-text
+        height: 100px
+        padding: 5px 40px
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2)
+    #feeling-icon2:hover
+      color: black
+      ~ .feeling-icon2-text
+        height: 100px
+        padding: 5px 40px
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+    #feeling-icon3:hover
+      color: black
+      ~ .feeling-icon3-text
+        height: 100px
+        padding: 5px 40px
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+    #feeling-icon4:hover
+      color: black
+      ~ .feeling-icon4-text
+        height: 100px
+        padding: 5px 40px
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+    #feeling-icon5:hover
+      color: black
+      ~ .feeling-icon5-text
+        height: 100px
+        padding: 5px 40px
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+
+
+
+
+@media (max-width: 600px)
+  .sensations
+    .sensations-flex
+      .sensations-text
+        font-size: 14px
+        p:first-child::before
+          left: 5%
+        p:last-child::before
+          left: 5%
+        p:nth-child(2)::before
+          left: 5%

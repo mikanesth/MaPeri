@@ -1,0 +1,52 @@
+.indic-med
+  width: 100%
+  min-height: 600px
+  padding: 30px
+  margin: none
+  position: relative
+  top: 90px
+  text-align: center
+  color: $bleu-lavande
+  font-family: $Opensans
+  background: white
+  //margin-bottom: 30px
+
+  .indic-med-flexbox
+    width: 90%
+    margin: auto
+    height: 100%
+    padding: none
+    margin: none
+    +display(flex)
+    +justify-content(center)
+    +align-items(center)
+    +flex-direction(row)
+    @extend %centering
+    top: 55%
+
+    .indic-med-video
+      position: relative
+      height: 300px
+      width: 50%
+      padding: 20px
+      //background: $bleu-lavande
+      video
+        @extend %centering
+        width: 95%
+        border-radius: 7px
+        box-shadow: 1px 1px 12px 0px transparentize(black, 0.6)
+    .indic-med-text
+      position: relative
+      height: 300px
+      width: 50%
+      padding: 20px
+      //background: $bleu-lavande
+      p
+        font-family: $Opensans
+        text-align: left
+        width: 90%
+        @extend %centering
+        &::first-letter
+          font-size: 20px
+          //color: white
+          margin-left: 20px

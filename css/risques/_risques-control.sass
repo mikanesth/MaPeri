@@ -1,0 +1,88 @@
+.risque-control
+  width: 100%
+  min-height: 600px
+  position: relative
+  top: 90px
+  text-align: center
+  padding: 50px 0px 50px 0px
+  background: $bleu-lavande
+  margin-bottom: 90px
+
+  h1
+    color: white
+    margin-bottom: 50px
+
+  .risque-control-flexbox
+    +display(flex)
+    +justify-content(space-around)
+    +align-items(center)
+    max-width: 1000px
+    margin: auto
+    padding: 30px
+
+    .risque-control-button
+      background: transparentize(white, 0.5)
+      border-radius: 50px
+      padding: 10px
+      min-width: 20%
+      color: $bleu-lavande
+      font-family: $Opensans
+      &:hover
+        background-color: white
+        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
+  input[type=radio]
+    display: none
+
+  .risque-control-text-1, .risque-control-text-2, .risque-control-text-3, .risque-control-text-4
+    width: 100%
+    height: 0px
+    overflow: hidden
+    background: transparentize($blanc-lin, 0.5)
+    +transition(500ms ease-in)
+    p
+      max-width: 70%
+      margin: auto
+      font-size: 15px
+      letter-spacing: 0.2rem
+      text-align: justify
+      font-family: $Opensans
+
+  #pcr-5:checked
+    ~ .risque-control-text-1
+      height: 200px
+      padding: 30px
+    ~ .risque-control-flexbox
+      label:first-child
+        background-color: white
+        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
+  #pcr-6:checked
+    ~ .risque-control-text-2
+      height: 200px
+      padding: 30px
+    ~ .risque-control-flexbox
+      label:nth-child(2)
+        background-color: white
+        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
+  #pcr-7:checked
+    ~ .risque-control-text-3
+      height: 200px
+      padding: 30px
+    ~ .risque-control-flexbox
+      label:nth-child(3)
+        background-color: white
+        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
+  #pcr-8:checked
+    ~ .risque-control-text-4
+      height: 200px
+      padding: 30px
+    ~ .risque-control-flexbox
+      label:last-child
+        background-color: white
+        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
+  .maj
+    position: absolute
+    background: transparentize($filtre-noir, 0.4)
+    color: white
+    z-index: 20
+    right: 10px
+    bottom: 10px

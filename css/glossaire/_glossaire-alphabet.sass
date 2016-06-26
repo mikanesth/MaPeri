@@ -1,0 +1,206 @@
+#glossaire-em
+  display: block
+  width: 90%
+  margin: auto
+  color: $bleu-lavande
+  text-align: left
+.glossaire-alphabet
+  width: 90%
+  margin: auto
+  +display(flex)
+  +flex-direction(row)
+  +flex-wrap(nowrap)
+  +justify-content(space-around)
+  +align-items(center)
+  min-height: 80px
+  font-family: $Opensans
+  border-bottom: solid 1px $bleu-lavande
+
+  label
+    text-transform: uppercase
+    color: rgba(238,238,238, 1)
+    font-size: 25px
+    &:hover
+      color: $bleu-lavande
+      cursor: pointer
+
+
+[class*=glossaire-content]
+  width: 90%
+  min-height: 500px
+  margin: auto
+  display: none
+  +transition(500ms)
+  .col-sm-2
+    text-align: center
+    text-transform: uppercase
+    color: $bleu-lavande
+    font-family: $Opensans
+
+.glossaire-content-placeholder
+  width: 90%
+  margin: auto
+  height: 300px
+  display: block
+input[id*=rg]
+  display: none
+  &:checked
+    ~ .glossaire-content-placeholder
+      display: none
+#rg1:checked
+  ~ .glossaire-alphabet
+    label[for="rg1"]
+      color: $bleu-lavande
+  ~ .glossaire-content-a
+    display: block
+
+#rg2:checked
+  ~ .glossaire-alphabet
+    label[for="rg2"]
+      color: $bleu-lavande
+  ~ .glossaire-content-b
+    display: block
+#rg3:checked
+  ~ .glossaire-alphabet
+    label[for="rg3"]
+      color: $bleu-lavande
+  ~ .glossaire-content-c
+    display: block
+#rg4:checked
+  ~ .glossaire-alphabet
+    label[for="rg4"]
+      color: $bleu-lavande
+  ~ .glossaire-content-d
+    display: block
+#rg5:checked
+  ~ .glossaire-alphabet
+    label[for="rg5"]
+      color: $bleu-lavande
+  ~ .glossaire-content-e
+    display: block
+#rg6:checked
+  ~ .glossaire-alphabet
+    label[for="rg6"]
+      color: $bleu-lavande
+  ~ .glossaire-content-f
+    display: block
+#rg7:checked
+  ~ .glossaire-alphabet
+    label[for="rg7"]
+      color: $bleu-lavande
+  ~ .glossaire-content-g
+    display: block
+#rg8:checked
+  ~ .glossaire-alphabet
+    label[for="rg8"]
+      color: $bleu-lavande
+  ~ .glossaire-content-h
+    display: block
+#rg9:checked
+  ~ .glossaire-alphabet
+    label[for="rg9"]
+      color: $bleu-lavande
+  ~ .glossaire-content-i
+    display: block
+#rg10:checked
+  ~ .glossaire-alphabet
+    label[for="rg10"]
+      color: $bleu-lavande
+  ~ .glossaire-content-j
+    display: block
+#rg11:checked
+  ~ .glossaire-alphabet
+    label[for="rg11"]
+      color: $bleu-lavande
+  ~ .glossaire-content-k
+    display: block
+#rg12:checked
+  ~ .glossaire-alphabet
+    label[for="rg12"]
+      color: $bleu-lavande
+  ~ .glossaire-content-l
+    display: block
+#rg13:checked
+  ~ .glossaire-alphabet
+    label[for="rg13"]
+      color: $bleu-lavande
+  ~ .glossaire-content-m
+    display: block
+#rg14:checked
+  ~ .glossaire-alphabet
+    label[for="rg14"]
+      color: $bleu-lavande
+  ~ .glossaire-content-n
+    display: block
+#rg15:checked
+  ~ .glossaire-alphabet
+    label[for="rg15"]
+      color: $bleu-lavande
+  ~ .glossaire-content-o
+    display: block
+#rg16:checked
+  ~ .glossaire-alphabet
+    label[for="rg16"]
+      color: $bleu-lavande
+  ~ .glossaire-content-p
+    display: block
+#rg17:checked
+  ~ .glossaire-alphabet
+    label[for="rg17"]
+      color: $bleu-lavande
+  ~ .glossaire-content-q
+    display: block
+#rg18:checked
+  ~ .glossaire-alphabet
+    label[for="rg18"]
+      color: $bleu-lavande
+  ~ .glossaire-content-r
+    display: block
+#rg19:checked
+  ~ .glossaire-alphabet
+    label[for="rg19"]
+      color: $bleu-lavande
+  ~ .glossaire-content-s
+    display: block
+#rg20:checked
+  ~ .glossaire-alphabet
+    label[for="rg20"]
+      color: $bleu-lavande
+  ~ .glossaire-content-t
+    display: block
+#rg21:checked
+  ~ .glossaire-alphabet
+    label[for="rg21"]
+      color: $bleu-lavande
+  ~ .glossaire-content-u
+    display: block
+#rg22:checked
+  ~ .glossaire-alphabet
+    label[for="rg22"]
+      color: $bleu-lavande
+  ~ .glossaire-content-v
+    display: block
+#rg23:checked
+  ~ .glossaire-alphabet
+    label[for="rg23"]
+      color: $bleu-lavande
+  ~ .glossaire-content-w
+    display: block
+#rg24:checked
+  ~ .glossaire-alphabet
+    label[for="rg24"]
+      color: $bleu-lavande
+  ~ .glossaire-content-x
+    display: block
+#rg25:checked
+  ~ .glossaire-alphabet
+    label[for="rg25"]
+      color: $bleu-lavande
+  ~ .glossaire-content-y
+    display: block
+#rg26:checked
+  ~ .glossaire-alphabet
+    label[for="rg26"]
+      color: $bleu-lavande
+  ~ .glossaire-content-z
+    display: block
