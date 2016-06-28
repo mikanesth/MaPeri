@@ -2808,16 +2808,24 @@ input[id*=rg] {
     background: rgba(236, 236, 234, 0.5);
     -webkit-transition: 500ms ease-in;
     -moz-transition: 500ms ease-in;
-    transition: 500ms ease-in; }
+    transition: 500ms ease-in;
+    font-family: "Open sans", sans-serif; }
     .risque-control .risque-control-text-1 p, .risque-control .risque-control-text-2 p, .risque-control .risque-control-text-3 p, .risque-control .risque-control-text-4 p {
       max-width: 70%;
       margin: auto;
       font-size: 15px;
-      letter-spacing: 0.2rem;
+      letter-spacing: 0.1rem;
       text-align: justify;
       font-family: "Open sans", sans-serif; }
+    .risque-control .risque-control-text-1 span, .risque-control .risque-control-text-2 span, .risque-control .risque-control-text-3 span, .risque-control .risque-control-text-4 span {
+      color: white; }
+    .risque-control .risque-control-text-1 video, .risque-control .risque-control-text-2 video, .risque-control .risque-control-text-3 video, .risque-control .risque-control-text-4 video {
+      width: 30%;
+      margin-bottom: 20px;
+      border-radius: 7px;
+      box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.25); }
   .risque-control #pcr-5:checked ~ .risque-control-text-1 {
-    height: 200px;
+    height: auto;
     padding: 30px; }
   .risque-control #pcr-5:checked ~ .risque-control-flexbox label:first-child {
     background-color: white;
