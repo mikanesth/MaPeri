@@ -39,10 +39,10 @@
         color: rgba(0, 0, 0, 0.4); }
         .sidebar .sidebar-menu .sidebar-item a:hover {
           color: black; }
-      .sidebar .sidebar-menu .sidebar-item:nth-child(3) {
+      .sidebar .sidebar-menu .sidebar-item.active {
         color: black;
         border: 1px solid rgba(0, 0, 0, 0.7); }
-        .sidebar .sidebar-menu .sidebar-item:nth-child(3) a {
+        .sidebar .sidebar-menu .sidebar-item.active a {
           color: black; }
 
 .floater-right {
@@ -1448,7 +1448,7 @@ footer {
       .pain-evolution .pain-content .pain-box .pain-bar-episio {
         width: 85%; }
       .pain-evolution .pain-content .pain-box .pain-bar-tv {
-        width: 80%; }
+        width: 41%; }
       .pain-evolution .pain-content .pain-box .pain-bar-cont {
         width: 80%; }
       .pain-evolution .pain-content .pain-box .pain-bar-peri {
@@ -2960,6 +2960,8 @@ input[id*=rg] {
       .nous-team .col-sm-3 {
         border: none; } }
     .nous-team .col-sm-3 img {
+      height: 128px;
+      width: 128px;
       border-radius: 50%;
       box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.3); }
   .nous-team .col-sm-9 h4 {
