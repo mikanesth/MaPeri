@@ -1386,16 +1386,54 @@ footer {
       position: relative;
       top: 2px;
       left: 2px; }
+    .pain-evolution .pain-trigger em {
+      display: none; }
+  .pain-evolution .pain-check {
+    display: none; }
+    .pain-evolution .pain-check:checked ~ .pain-trigger em {
+      display: inline-block; }
+    .pain-evolution .pain-check:checked ~ .pain-trigger span {
+      display: none; }
+    .pain-evolution .pain-check:checked ~ .pain-content .pain-box .pain-bar-cont {
+      width: 16%; }
+    .pain-evolution .pain-check:checked ~ .pain-content .pain-box .pain-bar-tv {
+      width: 10%; }
+    .pain-evolution .pain-check:checked ~ .pain-content .pain-box .pain-bar-exp {
+      width: 25%; }
+    .pain-evolution .pain-check:checked ~ .pain-content .pain-box .pain-bar-episio {
+      width: 13%; }
   .pain-evolution .pain-content {
     text-align: left;
     position: relative;
     display: block;
     max-width: 1000px;
-    margin: auto; }
-    .pain-evolution .pain-content::after {
-      clear: both;
-      content: "";
-      display: table; }
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify; }
     .pain-evolution .pain-content .pain-box {
       position: relative;
       display: -webkit-box;
@@ -1425,12 +1463,7 @@ footer {
       justify-content: center;
       -ms-flex-pack: center;
       width: 45%;
-      float: left;
       min-height: 300px; }
-      .pain-evolution .pain-content .pain-box:first-child {
-        margin-right: 10%; }
-      .pain-evolution .pain-content .pain-box:last-child {
-        margin-left: 10%; }
       .pain-evolution .pain-content .pain-box p {
         border-bottom: 1px solid #6d9ee1;
         margin-bottom: 0;
@@ -1457,16 +1490,6 @@ footer {
         width: 40%; }
       .pain-evolution .pain-content .pain-box .pain-bar-exp {
         width: 90%; }
-    .pain-evolution .pain-content .pain-check {
-      display: none; }
-      .pain-evolution .pain-content .pain-check:checked ~ .pain-box .pain-bar-cont {
-        width: 16%; }
-      .pain-evolution .pain-content .pain-check:checked ~ .pain-box .pain-bar-tv {
-        width: 10%; }
-      .pain-evolution .pain-content .pain-check:checked ~ .pain-box .pain-bar-exp {
-        width: 25%; }
-      .pain-evolution .pain-content .pain-check:checked ~ .pain-box .pain-bar-episio {
-        width: 13%; }
   .pain-evolution .maj {
     position: absolute;
     right: 10px;
@@ -1770,7 +1793,12 @@ footer {
       color: rgba(0, 0, 0, 0.5);
       border-radius: 50%;
       margin-bottom: 30px; }
-    .feeling .feeling-icon-container .feeling-icon1-text, .feeling .feeling-icon-container .feeling-icon2-text, .feeling .feeling-icon-container .feeling-icon3-text, .feeling .feeling-icon-container .feeling-icon4-text, .feeling .feeling-icon-container .feeling-icon5-text {
+    .feeling .feeling-icon-container .feeling-icon1-text,
+    .feeling .feeling-icon-container .feeling-icon2-text,
+    .feeling .feeling-icon-container .feeling-icon3-text,
+    .feeling .feeling-icon-container .feeling-icon4-text,
+    .feeling .feeling-icon-container .feeling-icon5-text,
+    .feeling .feeling-icon-container .feeling-icon6-text {
       display: block;
       width: 100%;
       height: 0px;
@@ -1784,31 +1812,37 @@ footer {
     .feeling .feeling-icon-container #feeling-icon1:hover {
       color: black; }
       .feeling .feeling-icon-container #feeling-icon1:hover ~ .feeling-icon1-text {
-        height: 100px;
+        height: auto;
         padding: 5px 40px;
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2); }
     .feeling .feeling-icon-container #feeling-icon2:hover {
       color: black; }
       .feeling .feeling-icon-container #feeling-icon2:hover ~ .feeling-icon2-text {
-        height: 100px;
+        height: auto;
         padding: 5px 40px;
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3); }
     .feeling .feeling-icon-container #feeling-icon3:hover {
       color: black; }
       .feeling .feeling-icon-container #feeling-icon3:hover ~ .feeling-icon3-text {
-        height: 100px;
+        height: auto;
         padding: 5px 40px;
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3); }
     .feeling .feeling-icon-container #feeling-icon4:hover {
       color: black; }
       .feeling .feeling-icon-container #feeling-icon4:hover ~ .feeling-icon4-text {
-        height: 100px;
+        height: auto;
         padding: 5px 40px;
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3); }
     .feeling .feeling-icon-container #feeling-icon5:hover {
       color: black; }
       .feeling .feeling-icon-container #feeling-icon5:hover ~ .feeling-icon5-text {
-        height: 100px;
+        height: auto;
+        padding: 5px 40px;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3); }
+    .feeling .feeling-icon-container #feeling-icon6:hover {
+      color: black; }
+      .feeling .feeling-icon-container #feeling-icon6:hover ~ .feeling-icon6-text {
+        height: auto;
         padding: 5px 40px;
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3); }
 

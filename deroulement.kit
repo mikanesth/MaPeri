@@ -34,15 +34,17 @@
           <div class="col-cont">
             <ul>
               <li><i class="fa fa-check-square"></i>Avoir eu sa consultation d'anesthesie</li>
+              <li><i class="fa fa-check-square"></i>Avoir son dernier bilan sanguin</li>
               <li><i class="fa fa-check-square"></i>Disponibilité de l'équipe d'anesthesie</li>
               <li><i class="fa fa-check-square"></i>Salle équipée pour l'anesthésie</li>
             </ul>
           </div>
           <div class="col-cont">
             <ul>
-              <li><i class="fa fa-check-square"></i>Pas d'anomalies de la coagulaiton</li>
+              <li><i class="fa fa-check-square"></i>Pas d'anomalies de la coagulation</li>
               <li><i class="fa fa-check-square"></i>Pas d'infection</li>
               <li><i class="fa fa-check-square"></i>Pas d'autres contres indications</li>
+              <li><i class="fa fa-check-square"></i>Ne pas avoir un accouchement imminent</li>
             </ul>
           </div>
         </div>
@@ -80,9 +82,9 @@
           </div>
           <div class="who-item2">
             <div class="who-overlay">
-              <h4 style="color: black">Votre Sage Femme</h4>
+              <h4 style="color: black">Sage Femme</h4>
               <p>Présent(e) la plupart du temps lors de la pose pour vous soutenir
-              votre sage femme sera surtout à vos côté tout au long du travail et
+              la ou le sage-femme sera surtout à vos côté tout au long du travail et
               de l'accouchement.</p>
             </div>
             <img class="who-img" src="img/icon/fa-user.svg"></img>
@@ -119,6 +121,7 @@
           <span id="feeling-icon3" class="fa fa-heartbeat"></span>
           <span id="feeling-icon4" class="fa fa-pause"></span>
           <span id="feeling-icon5" class="fa fa-tachometer"></span>
+          <span id="feeling-icon6" class="fa fa-tachometer"></span>
           <div class="feeling-icon1-text">
             <h4>Paresthésies</h4>
             <p>Sensations de decharges electriques, le plus souvent
@@ -133,10 +136,11 @@
             </p>
           </div>
           <div class="feeling-icon3-text">
-            <h4>Fourmillements</h4>
+            <h4>Fourmillements, grattage</h4>
             <p>Vous pourrez ressentir a l'installation de la péridurale des sensations de
               fourmillement dans les jambes, ceci est lié aux anesthésiques locaux et c'est encore une fois
-              normal.
+              normal. Les autres analgésiques présents dans la péridurale peuvent produire une sensation de grattement
+              sur les jambes ou ailleurs.
             </p>
           </div>
           <div class="feeling-icon4-text">
@@ -149,6 +153,14 @@
             <p>L'effet des anesthésiques locaux présents dans la peridurale en plus
             d'abolir la sensation de douleur reduisent la force musculaire et vous pouvez
             avoir une sensation de jambes "lourdes". Tant que vous pouvez soulever vos jambes c'est normal.
+            </p>
+          </div>
+          <div class="feeling-icon6-text">
+            <h4>Chaleur, Frissons</h4>
+            <p>A l'induction de la péridurale il n'est pas rare de ressentir des frissons ceci est lié à une dilatation
+              de vos vaisseaux sanguins en une diminution de la température du corps de maniere rapide. Cependant votre
+              température restera dans des valeurs normales et le froid ne sera pas ressenti. A contrario certaines femmes resentent
+              une sensation de chaleur avev la péridurale, encore une fois liée a une dilatationn des vaisseaux sanguins.
             </p>
           </div>
         </div>
@@ -171,12 +183,11 @@
       <!-- ===================== FIN DELAI INSTALLATION ==================-->
 
       <section class="pain-evolution">
+        <input type="checkbox" id="pain-check" class="pain-check">
         <p style="max-width: 1000px; margin: auto; color: rgba(0,0,0,0.7); margin-bottom: 40px">Vous pouvez dans cette partie en cliquant sur "simuler pose de péridurale" vous représenter l'évolution des douleurs attendue avec la pose de votre péridurale. Ces données reposent sur une étude réalisée
         au CHU de Tours auprès de femmes enceintes comme vous. Elle représentent les douleurs cotées sur une échelle de 0 à 10 et leur évolution avec la péridurale. </p>
-        <label for="pain-check" class="pain-trigger">Simuler pose de péridurale</label>
+        <label for="pain-check" class="pain-trigger"><span>Voir évolution avec péridurale</span><em>Voir douleurs sans péridurale</em></label>
         <div class="pain-content">
-          <input type="checkbox" id="pain-check" class="pain-check">
-
           <div class="pain-box">
             <p>Toucher vaginal</p>
             <div class="pain-bar-tv"></div>
