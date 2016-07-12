@@ -27,7 +27,26 @@
       position: relative
       top: 2px
       left: 2px
-
+    em
+      display: none
+  .pain-check
+    display: none
+    &:checked
+      ~ .pain-trigger
+        em
+          display: inline-block
+        span
+          display: none
+      ~ .pain-content
+        .pain-box
+          .pain-bar-cont
+            width: 16%
+          .pain-bar-tv
+            width: 10%
+          .pain-bar-exp
+            width: 25%
+          .pain-bar-episio
+            width: 13%
   .pain-content
     text-align: left
     position: relative
@@ -35,7 +54,10 @@
     max-width: 1000px
     margin: auto
     //background: pink
-    +clearfix
+    +display(flex)
+    +flex-direction(row)
+    +justify-content(space-between)
+
 
     .pain-box
       position: relative
@@ -44,12 +66,7 @@
       +flex-direction(column)
       +justify-content(center)
       width: 45%
-      float: left
       min-height: 300px
-      &:first-child
-        margin-right: 10%
-      &:last-child
-        margin-left: 10%
 
       p
         border-bottom: 1px solid $bleu_lavande
@@ -66,7 +83,7 @@
       .pain-bar-episio
         width: 85%
       .pain-bar-tv
-        width: 80%
+        width: 41%
       .pain-bar-cont
         width: 80%
       .pain-bar-peri
@@ -76,18 +93,7 @@
       .pain-bar-exp
         width: 90%
 
-    .pain-check
-      display: none
-      &:checked
-        ~ .pain-box
-          .pain-bar-cont
-            width: 16%
-          .pain-bar-tv
-            width: 10%
-          .pain-bar-exp
-            width: 25%
-          .pain-bar-episio
-            width: 13%
+
   .maj
     position: absolute
     right: 10px

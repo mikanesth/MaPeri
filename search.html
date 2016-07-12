@@ -2,20 +2,25 @@
 
 <html>
   <head>
-  <title>Recherche - MaPéri</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-  <script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
-  <script type="text/javascript" src="tipuesearch/tipuesearch_content.js"></script>
-  <link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+		<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.css" type="text/css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<link rel="prefetch" href="images/zoom.png">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>Glossaire - MaPéri</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="tipuesearch/tipuesearch_content.js"></script>
+  <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+  <script src="tipuesearch/tipuesearch_set.js"></script>
+  <script src="tipuesearch/tipuesearch.min.js"></script>
 
   </head>
   <body>
+
     <header class="blue-header">
 			<a href="index.html"><img class="logo img-circle" src="img/logo2.png"/></a>
 			<nav>
@@ -53,13 +58,15 @@
 		      </ul>
 		    </div>
 		</div>
+    <section class="resultats">
+      <h1>Resultats de vos recherches</h1>
+      <form action="search.html" class="glossaire-search">
+        <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+        <label for="tipue_search_input" type="text">Search...</label>
+      </form>
+      <div id="tipue_search_content"></div>
+    </section>
 
-
-    <form action="search.html" class="glossaire-search">
-      <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
-      <label for="tipue_search_input" type="text">Search...</label>
-    </form>
-    <div id="tipue_search_content"></div>
 
 
 

@@ -13,7 +13,7 @@
       <ul class="sidebar-menu">
         <li class="sidebar-item"><a href="index.html">Accueil</a></li>
         <li class="sidebar-item"><a href="principes.html">Principes</a></li>
-        <li class="sidebar-item"><a href="#">Déroulement</a></li>
+        <li class="sidebar-item active"><a href="#">Déroulement</a></li>
         <li class="sidebar-item"><a href="benefices.html">Bénéfices /risques</a></li>
         <li class="sidebar-item"><a href="faq.html">Idées reçues</a></li>
       </ul>
@@ -24,21 +24,27 @@
 
     <!-- ===================== SECTION CHECKLIST ==================-->
       <section class="checklist">
-        <img id="bg-checklist" src="img/bg_welcome.jpg" height="1900" width="1250">
-        <h1>Check-list</h1>
-        <div class="container cont-checklist">
-          <div class="col-sm-6">
+        <div class="checklist-filter"></div>
+        <div class="checklist-intro">
+          <h1>Check-list</h1>
+          <p>Pour pouvoir bénéficier d'une péridurale il faudra remplir plusieurs critères obligatoires que nous vous expososns ci-dessous et qui serons
+            toujours controlés par votre medecin avant pour votre sécurité, notamment l'absence de contre indications médicales à la péridurale.</p>
+        </div>
+        <div class="cont-flexbox">
+          <div class="col-cont">
             <ul>
-              <li>Avoir eu sa cs d'anesthesie</li>
-              <li>Disponibilité de l'équipe d'anesthesie</li>
-              <li>Salle équipée pour l'anesthésie</li>
+              <li><i class="fa fa-check-square"></i>Avoir eu sa consultation d'anesthésie</li>
+              <li><i class="fa fa-check-square"></i>Avoir eu son dernier bilan sanguin (spé Tours)</li>
+              <li><i class="fa fa-check-square"></i>Disponibilité de l'équipe d'anesthésie</li>
+              <li><i class="fa fa-check-square"></i>Salle équipée pour l'anesthésie</li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-cont">
             <ul>
-              <li>Pas de troubles de la coagulaiton</li>
-              <li>Pas d'infection</li>
-              <li>Pas d'autres contres indications</li>
+              <li><i class="fa fa-check-square"></i>Pas d'anomalies de la coagulation</li>
+              <li><i class="fa fa-check-square"></i>Pas d'infection</li>
+              <li><i class="fa fa-check-square"></i>Pas d'autres contres indications</li>
+              <li><i class="fa fa-check-square"></i>Ne pas avoir un accouchement imminent</li>
             </ul>
           </div>
         </div>
@@ -49,9 +55,22 @@
       <section class="VR-cont">
         <div class="bg-wrap"></div>
         <div class="VR-left">
-          <h2>Decouvrez votre salle d'accouchement</h2>
+          <h2>Découvrez votre salle d'accouchement</h2>
           <p>Les sons</p>
-          <p>Les objets</p>
+          <em>Ecouter le bruit du scope</em>
+          <audio  controls loop>
+            <source src="something.mp3" type="audio/mpeg">
+              <p>
+                Si vous lisez cela, votre navigteur  ne peux pas lire cette piste
+              </p>
+          </audio><br/>
+          <em>Ecouter le bruit du tocomètre</em>
+          <audio  controls loop>
+            <source src="something.mp3" type="audio/mpeg">
+              <p>
+                Si vous lisez cela, votre navigteur  ne peux pas lire cette piste
+              </p>
+          </audio>
         </div>
         <div class="VR-right">
           <div id="panorama"></div>
@@ -66,7 +85,7 @@
           <div class="who-item1">
             <div class="who-overlay">
               <h4 style="color: black">Médecin Anesthésiste</h4>
-              <p>Seul personne habilité à réaliser un geste d'analgésie péridurale,
+              <p>Seul personne habilitée à réaliser un geste d'analgésie péridurale,
                 il sera présent pour la pose et "l'induction" de l'analgésie.
                 Il ne sera pas présent tout au long du travail mais disponible
                 en cas d'urgence.</p>
@@ -76,19 +95,19 @@
           </div>
           <div class="who-item2">
             <div class="who-overlay">
-              <h4 style="color: black">Votre Sage Femme</h4>
-              <p>Présent(e) la plupart du temps lors de la pose pour vous soutenir
-              votre sage femme sera surtout à vos côté tout au long du travail et
+              <h4 style="color: black">Sage Femme</h4>
+              <p>Présent(e) la plupart du temps lors de la pose de votre péridurale pour vous aider
+              la ou le sage-femme sera surtout à vos côté tout au long du travail et
               de l'accouchement.</p>
             </div>
             <img class="who-img" src="img/icon/fa-user.svg"></img>
-            <p>Votre Sage-Femme</p>
+            <p>Sage-Femme</p>
           </div>
           <div class="who-item3">
             <div class="who-overlay">
               <h4 style="color: black">Infirmier Anesthésiste</h4>
               <p>Présent(e) la plupart du temps lors de la pose pour assister le
-              médecin anesthésiste ou réaliser l'induction en sa présence l'infirmier
+              médecin anesthésiste ou réaliser l'induction en sa présence, l'infirmier
               anesthésiste viendra réévaluer votre analgésie au cours du travail.</p>
             </div>
             <img class="who-img" src="img/icon/fa-user.svg"></img>
@@ -115,39 +134,45 @@
           <span id="feeling-icon3" class="fa fa-heartbeat"></span>
           <span id="feeling-icon4" class="fa fa-pause"></span>
           <span id="feeling-icon5" class="fa fa-tachometer"></span>
+          <span id="feeling-icon6" class="fa fa-tachometer"></span>
           <div class="feeling-icon1-text">
             <h4>Paresthésies</h4>
-            <p>Sensations de decharges electriques, le plus souvent
-              temporaire sans consequence et ne durant que quelques secondes
-              elles correspondent au contact avec un peit nerf lombaire
+            <p>Sensations de décharges électriques, sans conséquence et ne durant que quelques secondes
+              elles correspondent au contact avec un petit nerf au niveau lombaire.
             </p>
           </div>
           <div class="feeling-icon2-text">
-            <h4>Paresthésies</h4>
-            <p>Sensations de decharges electriques, le plus souvent
-              temporaire sans consequence et ne durant que quelques secondes
-              elles correspondent au contact avec un peit nerf lombaire
+            <h4>Tension dans le dos</h4>
+            <p>Certaines femmes, mais pas toutes, ressentent une sensation de tension dans
+              le dos au moment de la première injection de la péridurale. Ceci est normal.
             </p>
           </div>
           <div class="feeling-icon3-text">
-            <h4>Paresthésies</h4>
-            <p>Sensations de decharges electriques, le plus souvent
-              temporaire sans consequence et ne durant que quelques secondes
-              elles correspondent au contact avec un peit nerf lombaire
+            <h4>Fourmillements, grattage</h4>
+            <p>Vous pourrez ressentir à l'installation de la péridurale des sensations de
+              fourmillement dans les jambes, ceci est lié aux anesthésiques locaux et c'est encore une fois
+              normal. Les autres analgésiques présents dans la péridurale peuvent produire une sensation de grattement
+              sur les jambes ou ailleurs.
             </p>
           </div>
           <div class="feeling-icon4-text">
             <h4>Perte sensation des contractions</h4>
-            <p>Sensations de decharges electriques, le plus souvent
-              temporaire sans consequence et ne durant que quelques secondes
-              elles correspondent au contact avec un peit nerf lombaire
-            </p>
+            <p>Parfois l'effet de la péridurale est plus fort pour certaines femmes et les
+              contractions peuvent ne plus être ressenties pendant un certains moment.</p>
           </div>
           <div class="feeling-icon5-text">
-            <h4>Paresthésies</h4>
-            <p>Sensations de decharges electriques, le plus souvent
-              temporaire sans consequence et ne durant que quelques secondes
-              elles correspondent au contact avec un peit nerf lombaire
+            <h4>Jambes lourdes</h4>
+            <p>L'effet des anesthésiques locaux présents dans la péridurale en plus
+            d'abolir la sensation de douleur reduisent la force musculaire et vous pouvez
+            avoir une sensation de jambes "lourdes". Tant que vous pouvez soulever vos jambes ceci est normal.
+            </p>
+          </div>
+          <div class="feeling-icon6-text">
+            <h4>Chaleur, Frissons</h4>
+            <p>A l'induction de la péridurale il n'est pas rare de ressentir des frissons ceci est lié à une dilatation
+              de vos vaisseaux sanguins en une diminution de la température du corps de maniere rapide. Votre
+              température restera cependant dans des valeurs normales et le froid ne sera pas ressenti. A contrario certaines femmes resentent
+              une sensation de chaleur avec la péridurale, parfois d'un seul cote parfois des deux.
             </p>
           </div>
         </div>
@@ -170,12 +195,11 @@
       <!-- ===================== FIN DELAI INSTALLATION ==================-->
 
       <section class="pain-evolution">
-        <p style="max-width: 1000px; margin: auto; color: rgba(0,0,0,0.7); margin-bottom: 40px">Vous pouvez dans cette partie en cliquant sur "simuler pose de péridurale" vous représenter l'évolution des douleurs attendue avec la pose de votre péridurale. Ces données reposent sur une étude réalisée
+        <input type="checkbox" id="pain-check" class="pain-check">
+        <p style="max-width: 1000px; margin: auto; color: rgba(0,0,0,0.7); margin-bottom: 40px">Vous pouvez dans cette partie en cliquant sur "Voir douleurs avec péridurale" vous représenter l'évolution des douleurs attendue avec la pose de votre péridurale. Ces données reposent sur une étude réalisée
         au CHU de Tours auprès de femmes enceintes comme vous. Elle représentent les douleurs cotées sur une échelle de 0 à 10 et leur évolution avec la péridurale. </p>
-        <label for="pain-check" class="pain-trigger">Simuler pose de péridurale</label>
+        <label for="pain-check" class="pain-trigger"><span>Voir douleurs avec péridurale</span><em>Voir douleurs sans péridurale</em></label>
         <div class="pain-content">
-          <input type="checkbox" id="pain-check" class="pain-check">
-
           <div class="pain-box">
             <p>Toucher vaginal</p>
             <div class="pain-bar-tv"></div>
