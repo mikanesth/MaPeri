@@ -34,7 +34,7 @@
           <div class="col-cont">
             <ul>
               <li><i class="fa fa-check-square"></i>Avoir eu sa consultation d'anesthésie</li>
-              <li><i class="fa fa-check-square"></i>Avoir eu son dernier bilan sanguin (spé Tours)</li>
+              <li><i class="fa fa-check-square"></i>Avoir eu son dernier bilan sanguin</li>
               <li><i class="fa fa-check-square"></i>Disponibilité de l'équipe d'anesthésie</li>
               <li><i class="fa fa-check-square"></i>Salle équipée pour l'anesthésie</li>
             </ul>
@@ -59,14 +59,14 @@
           <p>Les sons</p>
           <em>Ecouter le bruit du scope</em>
           <audio  controls loop>
-            <source src="something.mp3" type="audio/mpeg">
+            <source src="img/sons/scope.mp3" type="audio/mpeg" loop>
               <p>
                 Si vous lisez cela, votre navigteur  ne peux pas lire cette piste
               </p>
           </audio><br/>
-          <em>Ecouter le bruit du tocomètre</em>
+          <em>Ecouter le bruit du cardiotocographe</em>
           <audio  controls loop>
-            <source src="something.mp3" type="audio/mpeg">
+            <source src="img/sons/monito.mp3" type="audio/mpeg">
               <p>
                 Si vous lisez cela, votre navigteur  ne peux pas lire cette piste
               </p>
@@ -232,23 +232,29 @@
         "autoLoad": true,
         "hotSpots": [
             {
-                 "pitch": -5,
-                 "yaw": 280,
+                 "pitch": 4,
+                 "yaw": 365,
                  "type": "info",
-                 "text": "Scope Anesthesie present pour votre surveillance pendant le geste, vous pouvez ecouter le bruit a gauche de l'image",
+                 "text": "Scope Anesthesie: present pour votre surveillance pendant le geste, vous pouvez ECOUTER LE BRUIT A GAUCHE DE L'IMAGE",
                  "URL": ""
             },
             {
-                 "pitch": -8.4,
-                 "yaw": 232.6,
+                 "pitch": -10,
+                 "yaw": 295.6,
                  "type": "info",
-                 "text": "Tocometre"
+                 "text": "Tocographe: Permet de monitorer le rythme cardiaque de votre enfant et vos contractions. Vous pouvez ECOUTER LES SONS QU'IL PRODUIT A GAUCHE DE L'IMAGE"
             },
             {
-                 "pitch": -0.9,
-                 "yaw": 144.4,
+                 "pitch": -0.1,
+                 "yaw": 35,
                  "type": "info",
-                 "text": "Mur dont on ne sait rien"
+                 "text": "Entrée/Sortie salle d'accouchement"
+            },
+            {
+                 "pitch": -12,
+                 "yaw": 245,
+                 "type": "info",
+                 "text": "Radio lecteur CD"
             }
         ]
       });
