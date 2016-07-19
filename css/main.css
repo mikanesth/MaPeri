@@ -2798,20 +2798,22 @@ input[id*=rg] {
       justify-content: space-between;
       -ms-flex-pack: justify; }
       .pain-control-2 .pain-control-bar .bar-flex .bar-peri {
-        width: 30%;
+        width: 25%;
         background: #6d9ee1;
         border-radius: 12px;
         text-align: center;
         font-size: 14px;
-        line-height: 25px; }
+        line-height: 25px;
+        z-index: 3; }
       .pain-control-2 .pain-control-bar .bar-flex .bar-no-peri {
         width: 100%;
         background: rgba(109, 158, 225, 0.7);
-        transform: translateX(-24px);
+        transform: translateX(-15%);
         border-radius: 12px;
         text-align: center;
         font-size: 14px;
-        line-height: 25px; }
+        line-height: 25px;
+        z-index: 2; }
     .pain-control-2 .pain-control-bar .number-flex {
       width: 100%;
       display: -webkit-box;

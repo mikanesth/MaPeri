@@ -50,20 +50,22 @@
       +flex-direction(row)
       +justify-content(space-between)
       .bar-peri
-        width: 30%
+        width: 25%
         background: $bleu-lavande
         border-radius: 12px
         text-align: center
         font-size: 14px
         line-height: 25px
+        z-index: 3
       .bar-no-peri
         width: 100%
         background: transparentize($bleu-lavande, 0.3)
-        transform: translateX(-24px)
+        transform: translateX(-15%)
         border-radius: 12px
         text-align: center
         font-size: 14px
         line-height: 25px
+        z-index: 2
     .number-flex
       width: 100%
       +display(flex)
