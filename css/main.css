@@ -2005,6 +2005,93 @@ footer {
       .feeling .feeling-icon-container #feeling-icon6:hover ~ .feeling-icon6-text {
         display: block; }
 
+.after-peri {
+  background: #6d9ee1;
+  width: 100%;
+  min-height: 600px;
+  padding: 30px;
+  margin: 0;
+  position: relative;
+  text-align: center; }
+  .after-peri .maj {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0px 5px 0px 5px; }
+  .after-peri h1 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: "Open sans", sans-serif;
+    font-size: 48px;
+    font-weight: 100; }
+  .after-peri .after-peri-flexbox {
+    max-width: 1000px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-lines: single;
+    -moz-box-lines: single;
+    box-lines: single;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    .after-peri .after-peri-flexbox .after-peri-content {
+      width: 300px;
+      background: white;
+      color: #6d9ee1;
+      text-align: center;
+      height: 400px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.3);
+      font-size: 18px;
+      font-weight: 100; }
+      .after-peri .after-peri-flexbox .after-peri-content span {
+        font-size: 50px;
+        padding-bottom: 20px; }
+      .after-peri .after-peri-flexbox .after-peri-content p {
+        text-align: left;
+        line-height: 2.6rem; }
+
 .glossaire-header {
   height: 300px;
   width: 100%;

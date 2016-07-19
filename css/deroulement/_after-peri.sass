@@ -1,0 +1,53 @@
+.after-peri
+  background: $bleu-lavande
+  width: 100%
+  min-height: 600px
+  padding: 30px
+  margin: 0
+  position: relative
+  text-align: center
+  .maj
+    position: absolute
+    right: 10px
+    bottom: 10px
+    background: transparentize($filtre-noir, 0.2)
+    color: white
+    padding: 0px 5px 0px 5px
+  h1
+    color: white
+    text-transform: uppercase
+    margin-bottom: 40px
+    font:
+      family: $Opensans
+      size: 48px
+      weight: 100
+
+  .after-peri-flexbox
+    max-width: 1000px
+    background: transparent
+    padding: 0
+    margin: 0
+    +display(flex)
+    +justify-content(space-between)
+    +align-items(center)
+    +flex-direction(row)
+    +flex-wrap(nowrap)
+
+    .after-peri-content
+      width: 300px
+      background: white
+      color: $bleu-lavande
+      text-align: center
+      height: 400px
+      padding: 20px
+      border-radius: 20px
+      box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3)
+      font:
+        size: 18px
+        weight: 100
+      span
+        font-size: 50px
+        padding-bottom: 20px
+      p
+        text-align: left
+        line-height: 2.6rem
