@@ -48,48 +48,47 @@
     .feeling-icon4-text,
     .feeling-icon5-text,
     .feeling-icon6-text
-      display: block
+      display: none
       width: 100%
-      height: 0px
+      height: auto
       background: transparentize(white, 0.9)
-      +transition(500ms)
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
       overflow: hidden
       border-radius: 7px
       color: white
+      padding: 5px 40px
+      box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+      @media (max-width: 1000px)
+        color: black
+
 
     #feeling-icon1:hover
       color: black
       ~ .feeling-icon1-text
-        height: auto
-        padding: 5px 40px
-        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2)
+        display: block
+        @extend %bouncy
     #feeling-icon2:hover
       color: black
       ~ .feeling-icon2-text
-        height: auto
-        padding: 5px 40px
-        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+        display: block
+        @extend %bouncy
     #feeling-icon3:hover
       color: black
       ~ .feeling-icon3-text
-        height: auto
-        padding: 5px 40px
-        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+        display: block
+        @extend %bouncy
     #feeling-icon4:hover
       color: black
       ~ .feeling-icon4-text
-        height: auto
-        padding: 5px 40px
-        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+        display: block
+        @extend %bouncy
     #feeling-icon5:hover
       color: black
       ~ .feeling-icon5-text
-        height: auto
-        padding: 5px 40px
-        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+        display: block
+        @extend %bouncy
     #feeling-icon6:hover
       color: black
       ~ .feeling-icon6-text
-        height: auto
-        padding: 5px 40px
-        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3)
+        display: block
+        @extend %bouncy

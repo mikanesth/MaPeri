@@ -1,0 +1,125 @@
+.pain-control-2
+  width: 100%
+  position: relative
+  top: 90px
+  text-align: center
+  padding: 60px 30px
+  background:
+    image: url('../../img/benefice.jpg')
+    size: cover
+    align: top-left
+    repeat: no-repeat
+  position: relative
+  color: white
+  h1
+    position: relative
+    color: $bleu-lavande
+    text-transform: uppercase
+    font-family: $Titillium
+    font:
+      size: 35px
+      weight: 200
+    padding-bottom: 20px
+    letter-spacing: 0.6rem
+  .pain-control-blur
+    position: absolute
+    top: 0px
+    bottom: 0px
+    left: 0px
+    right: 0px
+    background-color: black
+    filter: opacity(0.6)
+  .pain-control-bar
+    position: relative
+    text-align: center
+    color: white
+    font:
+      family: $Opensans
+      size: 18px
+    max-width: 1000px
+    margin: auto
+    height: auto
+    //background: pink
+    .bar-flex
+      margin: 10px 0px 5px 0px
+      +display(flex)
+      width: 90%
+      height: 25px
+      margin-right: auto
+      +flex-wrap(no-wrap)
+      +flex-direction(row)
+      +justify-content(space-between)
+      .bar-peri
+        width: 25%
+        background: $bleu-lavande
+        border-radius: 12px
+        text-align: center
+        font-size: 14px
+        line-height: 25px
+        z-index: 3
+      .bar-no-peri
+        width: 100%
+        background: transparentize($bleu-lavande, 0.3)
+        transform: translateX(-15%)
+        border-radius: 12px
+        text-align: center
+        font-size: 14px
+        line-height: 25px
+        z-index: 2
+    .number-flex
+      width: 100%
+      +display(flex)
+      +justify-content(space-between)
+      color: white
+      height: auto
+      +flex-wrap(no-wrap)
+      +flex-direction(row)
+  .pain-control-text-flex
+    font-family: $Opensans
+    font-weight: 100
+    line-height: 2.2rem
+    letter-spacing: 0.1rem
+    position: relative
+    width: 100%
+    margin: auto
+    +display(flex)
+    +flex-direction(row)
+    +flex-wrap(no-wrap)
+    +justify-content(space-around)
+    +align-items(center)
+    margin-top: 50px
+    .pain-control-text-left
+      width: 40%
+      text-align: left
+      &::before
+        text-align: center
+        font-weight: 100
+        content: "A"
+        display: block
+        +size(30px)
+        border-radius: 50%
+        background: $bleu-lavande
+        position: absolute
+        left: 0%
+        line-height: 30px
+      a
+        color: inherit
+        text-decoration: underline
+      em
+        color: $bleu-lavande
+    .pain-control-text-right
+      width: 40%
+      text-align: left
+      font-weight: 100
+      &::before
+        text-align: center
+        content: "B"
+        display: block
+        +size(30px)
+        border-radius: 50%
+        background: $bleu-lavande
+        position: absolute
+        left: 50%
+        line-height: 30px
+      em
+        color: $bleu-lavande
