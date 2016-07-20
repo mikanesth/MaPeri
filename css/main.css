@@ -1653,12 +1653,6 @@ footer {
         width: 40%; }
       .pain-evolution .pain-content .pain-box .pain-bar-exp {
         width: 90%; }
-  .pain-evolution .maj {
-    position: absolute;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 0px 5px 0px 5px; }
 
 .who {
   text-align: center;
@@ -2031,7 +2025,7 @@ footer {
     max-width: 1000px;
     background: transparent;
     padding: 0;
-    margin: 0;
+    margin: auto;
     display: -webkit-box;
     display: -moz-box;
     display: box;
