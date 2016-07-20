@@ -943,7 +943,7 @@ footer {
         bottom: 0px;
         right: 0px;
         left: 0px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.5);
         color: white;
         padding-top: 8%;
         opacity: 0;
@@ -952,11 +952,16 @@ footer {
         transition: 500ms;
         font-family: "Open sans", sans-serif;
         overflow: hidden; }
-        .img-section .img-container .img .img-overlay a {
+        .img-section .img-container .img .img-overlay p {
+          opacity: 1;
+          text-transform: none;
+          font-size: 14px;
+          font-family: "Open sans", sans-serif;
+          width: 80%;
           text-decoration: none;
           color: rgba(255, 255, 255, 0.7); }
           @media (max-width: 700px) {
-            .img-section .img-container .img .img-overlay a {
+            .img-section .img-container .img .img-overlay p {
               color: white; } }
         .img-section .img-container .img .img-overlay:hover {
           color: white; }
