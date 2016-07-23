@@ -3051,26 +3051,18 @@ input[id*=rg] {
       .principes-jumbo .principes-jumbo-wrap h1 {
         font-size: 20px;
         width: 90vw; } }
-    .principes-jumbo .principes-jumbo-wrap .fa-quote-left {
-      position: absolute;
-      top: 0px;
-      left: 20px;
+    .principes-jumbo .principes-jumbo-wrap h1 .fa-quote-left {
+      float: left;
+      position: relative;
       font-size: 60px;
       color: rgba(109, 158, 225, 0.5);
       z-index: -2; }
-      @media (max-width: 900px) {
-        .principes-jumbo .principes-jumbo-wrap .fa-quote-left {
-          left: 10px; } }
-    .principes-jumbo .principes-jumbo-wrap .fa-quote-right {
-      position: absolute;
-      bottom: 0px;
-      right: 50px;
+    .principes-jumbo .principes-jumbo-wrap h1 .fa-quote-right {
+      float: right;
+      position: relative;
       font-size: 60px;
       color: rgba(109, 158, 225, 0.5);
       z-index: -2; }
-      @media (max-width: 900px) {
-        .principes-jumbo .principes-jumbo-wrap .fa-quote-right {
-          right: 20px; } }
 
 .principes-images {
   width: 100%;
