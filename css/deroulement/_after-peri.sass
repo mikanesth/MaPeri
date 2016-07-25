@@ -51,3 +51,18 @@
       p
         text-align: left
         line-height: 2.6rem
+@media (max-width: $iphone)
+  .after-peri
+    .after-peri-flexbox
+      +flex-direction(column)
+      +justify-content(space-around)
+      padding: 30px 0px
+      .after-peri-content
+        max-width: 90%
+        height: auto
+        margin-bottom: 15px
+        :last-child
+          margin-bottom: 0px
+        p
+          font-size: 16px
+          font-weight: 400px

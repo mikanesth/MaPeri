@@ -67,23 +67,27 @@ $width: 100%
 
     p
       text-align: center
+      text-transform: capitalize
       font-size: 15px
       border-bottom: 1px solid $filtre-blanc
       margin-bottom: 10px
       //line-height: 30px
-    p:nth-child(2)
-      text-align: left
-      //position: relative
-      //left: -30px
-    p:nth-child(3)
-      //position: relative
-      //left: 30px
-      text-align: right
-    p:nth-child(4)
-      //position: relative
-      //left: -40px
-      text-align: left
-    p:nth-child(5)
-      //position: relative
-      //eft: 40px
-      text-align: right
+      &:last-child
+        display: none
+@media (max-width: 700px)
+  .VR-cont
+    padding: 20px
+    .bg-wrap
+      display: none
+    .VR-left
+      color: $bleu-lavande
+      p
+        border-bottom: 1px solid $bleu-lavande
+      p:last-child
+        display: block
+
+    .VR-right
+      margin-top: 15px
+      width: 100%
+      #panorama
+        width: 100%

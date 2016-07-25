@@ -116,6 +116,7 @@
                 Si vous lisez cela, votre navigteur  ne peux pas lire cette piste
               </p>
           </audio>
+          <p>Les lieux</p>
         </div>
         <div class="VR-right">
           <div id="panorama"></div>
@@ -172,14 +173,20 @@
       <section class="feeling">
         <div class="feeling-triangle"></div>
         <h3>sensations frequemment ressenties</h3>
-        <em>survolez pour plus de détails</em>
+        <em>cliquez pour plus de détails</em>
         <div class="feeling-icon-container">
-          <span id="feeling-icon1" class="fa fa-bolt"></span>
-          <span id="feeling-icon2"class="fa fa-diamond"></span>
-          <span id="feeling-icon3" class="fa fa-heartbeat"></span>
-          <span id="feeling-icon4" class="fa fa-pause"></span>
-          <span id="feeling-icon5" class="fa fa-tachometer"></span>
-          <span id="feeling-icon6" class="fa fa-tachometer"></span>
+          <input type="radio" name="feeling-check" id="feeling-check1">
+          <input type="radio" name="feeling-check" id="feeling-check2">
+          <input type="radio" name="feeling-check" id="feeling-check3">
+          <input type="radio" name="feeling-check" id="feeling-check4">
+          <input type="radio" name="feeling-check" id="feeling-check5">
+          <input type="radio" name="feeling-check" id="feeling-check6">
+          <label id="feeling-icon1" class="fa fa-bolt" for="feeling-check1"></label>
+          <label id="feeling-icon2"class="fa fa-diamond" for="feeling-check2"></label>
+          <label id="feeling-icon3" class="fa fa-heartbeat" for="feeling-check3"></label>
+          <label id="feeling-icon4" class="fa fa-pause" for="feeling-check4"></label>
+          <label id="feeling-icon5" class="fa fa-tachometer" for="feeling-check5"></label>
+          <label id="feeling-icon6" class="fa fa-tachometer" for="feeling-check6"></label>
           <div class="feeling-icon1-text">
             <h4>Paresthésies</h4>
             <p>Sensations de décharges électriques, sans conséquence et ne durant que quelques secondes
@@ -225,7 +232,7 @@
 
       <!-- ================= FIN SECTION SENSATIONS FREQUENTES ========-->
       <section class="sensations">
-        <h3>Délais d'installation // effets de la péridurale</h3>
+        <h3>Délais d'apparition des effets</h3>
         <div class="sensations-flex">
           <div class="sensations-clock">
             <img src="img/icon/clock2.svg">
@@ -241,6 +248,7 @@
 
       <section class="pain-evolution">
         <input type="checkbox" id="pain-check" class="pain-check">
+        <h2>Evolution des douleurs</h2>
         <p style="max-width: 1000px; margin: auto; color: rgba(0,0,0,0.7); margin-bottom: 40px">Vous pouvez dans cette partie en cliquant sur "Voir douleurs avec péridurale" vous représenter l'évolution des douleurs attendue avec la pose de votre péridurale. Ces données reposent sur une étude réalisée
         au CHU de Tours auprès de femmes enceintes comme vous. Elle représentent les douleurs cotées sur une échelle de 0 à 10 et leur évolution avec la péridurale. </p>
         <label for="pain-check" class="pain-trigger"><span>Voir douleurs avec péridurale</span><em>Voir douleurs sans péridurale</em></label>
