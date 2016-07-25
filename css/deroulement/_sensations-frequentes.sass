@@ -21,18 +21,30 @@
     margin-bottom: 5px
     text-align: center
     line-height: 90px
+    @media (max-width: 500px)
+      line-height: 40px
+      margin-bottom: 0px
+      width: 100%
   em
     color: $filtre-blanc
     position: relative
     top: -35px
     font-size: 12px
+    @media (max-width: 500px)
+      top: 0px
   .feeling-icon-container
     max-width: 1000px
     margin: auto
     min-height: 200px
+    @media (max-width: 500px)
+      margin-top: 10px
 
-    span
+    input[type="radio"]
+      display: none
+
+    label
       display: inline-block
+      position: relative
       margin:
         right: 40px
         left: 40px
@@ -41,6 +53,11 @@
       //background: blue
       border-radius: 50%
       margin-bottom: 30px
+      @media (max-width: $iphone)
+        margin:
+          right: 20px
+          left: 20px
+        font-size: 35px
 
     .feeling-icon1-text,
     .feeling-icon2-text,
@@ -61,34 +78,11 @@
       @media (max-width: 1000px)
         color: black
 
-
-    #feeling-icon1:hover
-      color: black
-      ~ .feeling-icon1-text
-        display: block
-        @extend %bouncy
-    #feeling-icon2:hover
-      color: black
-      ~ .feeling-icon2-text
-        display: block
-        @extend %bouncy
-    #feeling-icon3:hover
-      color: black
-      ~ .feeling-icon3-text
-        display: block
-        @extend %bouncy
-    #feeling-icon4:hover
-      color: black
-      ~ .feeling-icon4-text
-        display: block
-        @extend %bouncy
-    #feeling-icon5:hover
-      color: black
-      ~ .feeling-icon5-text
-        display: block
-        @extend %bouncy
-    #feeling-icon6:hover
-      color: black
-      ~ .feeling-icon6-text
-        display: block
-        @extend %bouncy
+    @for $i from 1 through 6
+      #feeling-check#{$i}:checked
+        ~ #feeling-icon#{$i}
+          color: black
+        ~ .feeling-icon#{$i}-text
+          display: block
+          @extend %bouncy
+@media (max-width: $iphone)

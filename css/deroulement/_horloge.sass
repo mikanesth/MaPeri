@@ -27,7 +27,7 @@
       position: relative
 
       img
-        +size(200px)
+        +size(250px)
         position: absolute
         top: 50%
         left: 50%
@@ -83,12 +83,19 @@
 
 @media (max-width: 600px)
   .sensations
+    h3
+      margin-bottom: 15px
     .sensations-flex
+      .sensations-clock
+        width: 40%
+        img
+          +size(150px)
       .sensations-text
+        width: 50%
         font-size: 14px
         p:first-child::before
-          left: 5%
+          left: -5%
         p:last-child::before
-          left: 5%
+          left: -5%
         p:nth-child(2)::before
-          left: 5%
+          left: -5%

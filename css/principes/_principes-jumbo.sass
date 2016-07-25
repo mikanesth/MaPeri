@@ -28,21 +28,15 @@
         font-size: 20px
         width: 90vw
 
-    .fa-quote-left
-      position: absolute
-      top: 0px
-      left: 20px
-      font-size: 60px
-      color: transparentize($bleu-lavande, 0.5)
-      z-index: -2
-      @media (max-width: 900px)
-        left: 10px
-    .fa-quote-right
-      position: absolute
-      bottom: 0px
-      right: 50px
-      font-size: 60px
-      color: transparentize($bleu-lavande, 0.5)
-      z-index: -2
-      @media (max-width: 900px)
-        right: 20px
+      .fa-quote-left
+        float: left
+        position: relative
+        font-size: 60px
+        color: transparentize($bleu-lavande, 0.5)
+        z-index: -2
+      .fa-quote-right
+        float: right
+        position: relative
+        font-size: 60px
+        color: transparentize($bleu-lavande, 0.5)
+        z-index: -2
