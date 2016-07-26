@@ -23,7 +23,7 @@
       background: transparentize($bleu-lavande, 0.5)
       border-radius: 50px
       padding: 10px
-      min-width: 20%
+      min-width: 15%
       color: white
       font-family: $Opensans
       &:hover
@@ -32,7 +32,11 @@
   input[type=radio]
     display: none
 
-  .pain-control-text-1, .pain-control-text-2, .pain-control-text-3, .pain-control-text-4
+  .pain-control-text-1,
+  .pain-control-text-2,
+  .pain-control-text-3,
+  .pain-control-text-4,
+  .pain-control-text-5
     width: 100%
     height: 0px
     overflow: hidden
@@ -48,35 +52,12 @@
       float: left
       margin-right: 20px
       width: 300px
-  #pcr-1:checked
-    ~ .pain-control-text-1
-      height: 250px
-      padding: 30px
-    ~ .pain-control-flexbox
-      label:first-child
-        background-color: $bleu-lavande
-        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
-  #pcr-2:checked
-    ~ .pain-control-text-2
-      height: 250px
-      padding: 30px
-    ~ .pain-control-flexbox
-      label:nth-child(2)
-        background-color: $bleu-lavande
-        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
-  #pcr-3:checked
-    ~ .pain-control-text-3
-      height: 250px
-      padding: 30px
-    ~ .pain-control-flexbox
-      label:nth-child(3)
-        background-color: $bleu-lavande
-        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
-  #pcr-4:checked
-    ~ .pain-control-text-4
-      height: 300px
-      padding: 30px
-    ~ .pain-control-flexbox
-      label:last-child
-        background-color: $bleu-lavande
-        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
+  @for $i from 1 through 5
+    #pcr-#{$i}:checked
+      ~ .pain-control-text-#{$i}
+        height: auto
+        padding: 30px
+      ~ .pain-control-flexbox
+        label:nth-child(#{$i})
+          background-color: $bleu-lavande
+          box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)

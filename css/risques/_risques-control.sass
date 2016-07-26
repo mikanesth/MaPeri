@@ -33,7 +33,10 @@
   input[type=radio]
     display: none
 
-  .risque-control-text-1, .risque-control-text-2, .risque-control-text-3, .risque-control-text-4
+  .risque-control-text-9,
+  .risque-control-text-6,
+  .risque-control-text-7,
+  .risque-control-text-8
     width: 100%
     height: 0px
     overflow: hidden
@@ -54,38 +57,16 @@
       margin-bottom: 20px
       border-radius: 7px
       box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
-  #pcr-5:checked
-    ~ .risque-control-text-1
-      height: auto
-      padding: 30px
-    ~ .risque-control-flexbox
-      label:first-child
-        background-color: white
-        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
-  #pcr-6:checked
-    ~ .risque-control-text-2
-      height: 200px
-      padding: 30px
-    ~ .risque-control-flexbox
-      label:nth-child(2)
-        background-color: white
-        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
-  #pcr-7:checked
-    ~ .risque-control-text-3
-      height: 200px
-      padding: 30px
-    ~ .risque-control-flexbox
-      label:nth-child(3)
-        background-color: white
-        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
-  #pcr-8:checked
-    ~ .risque-control-text-4
-      height: 200px
-      padding: 30px
-    ~ .risque-control-flexbox
-      label:last-child
-        background-color: white
-        box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
+  @for $i from 6 through 9
+    #pcr-#{$i}:checked
+      ~ .risque-control-text-#{$i}
+        height: auto
+        padding: 30px
+      ~ .risque-control-flexbox
+        .rcb#{$i}
+          background-color: white
+          box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
+
   .maj
     position: absolute
     background: transparentize($filtre-noir, 0.4)
