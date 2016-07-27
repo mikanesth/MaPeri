@@ -1,7 +1,7 @@
 .pain-control-2
   width: 100%
   position: relative
-  top: 90px
+  top: 60px
   text-align: center
   padding: 60px 30px
   background:
@@ -27,8 +27,7 @@
     bottom: 0px
     left: 0px
     right: 0px
-    background-color: black
-    filter: opacity(0.6)
+    background-color: rgba(0,0,0,0.6)
   .pain-control-bar
     position: relative
     text-align: center
@@ -88,6 +87,8 @@
     +justify-content(space-around)
     +align-items(center)
     margin-top: 50px
+    @media (max-width: 500px)
+      +flex-direction(column)
     .pain-control-text-left
       width: 40%
       text-align: left
@@ -102,6 +103,13 @@
         position: absolute
         left: 0%
         line-height: 30px
+      @media (max-width: 500px)
+        width: 100%
+        margin-bottom: 15px
+        &::before
+          top: -4%
+          left: 50%
+          transform: translateX(-50%)
       a
         color: inherit
         text-decoration: underline
@@ -121,5 +129,12 @@
         position: absolute
         left: 50%
         line-height: 30px
+      @media (max-width: 500px)
+        width: 100%
+        margin-top: 10px
+        &::before
+          top: 48%
+          left: 50%
+          transform: translateX(-50%)
       em
         color: $bleu-lavande

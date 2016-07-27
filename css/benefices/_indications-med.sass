@@ -4,12 +4,14 @@
   padding: 30px
   margin: none
   position: relative
-  top: 90px
+  top: 60px
   text-align: center
   color: $bleu-lavande
   font-family: $Opensans
   background: white
   //margin-bottom: 30px
+  @media (max-width: 500px)
+    min-height: 800px
 
   .indic-med-flexbox
     width: 90%
@@ -23,6 +25,8 @@
     +flex-direction(row)
     @extend %centering
     top: 55%
+    @media (max-width: 500px)
+      +flex-direction(column)
 
     .indic-med-video
       position: relative
@@ -30,6 +34,8 @@
       width: 50%
       padding: 20px
       //background: $bleu-lavande
+      @media (max-width: 500px)
+        width: 80%
       video
         @extend %centering
         width: 95%
@@ -41,6 +47,9 @@
       width: 50%
       padding: 20px
       //background: $bleu-lavande
+      @media (max-width: 500px)
+        width: 100%
+        order: 2
       p
         font-family: $Opensans
         text-align: left

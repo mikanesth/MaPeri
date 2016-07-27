@@ -1,7 +1,7 @@
 .benefices-to-risques
   position: relative
-  top: 90px
-  padding: 50px
+  top: 60px
+  padding: 0px 50px
   margin-bottom: 90px
   width: 100%
   text-align: center
@@ -13,6 +13,8 @@
     font-size: 20px
     font-family: $Opensans
     margin-bottom: 30px
+    @media (max-width: 500px)
+      font-size: 15px
 
   a
     display: inline-block
@@ -23,6 +25,9 @@
     line-height: 50px
     border: 4px solid $bleu-lavande
     border-radius: 7px
+    @media (max-width: 500px)
+      width: 80%
+      font-size: 20px
     &:hover
       background: $bleu-lavande
       color: white

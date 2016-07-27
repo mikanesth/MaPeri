@@ -1050,6 +1050,12 @@ footer {
     display: block;
     float: left;
     margin-left: 30px; }
+    @media (max-width: 500px) {
+      .presentation img {
+        max-width: 100%;
+        float: none;
+        position: relative;
+        left: -20px; } }
 
 .equipe {
   margin-top: 0px;
@@ -2609,12 +2615,17 @@ input[id*=rg] {
 
 .pain-control {
   width: 100%;
-  min-height: 600px;
+  height: auto;
+  padding: 50px 0px 50px 0px;
   position: relative;
   top: 90px;
   text-align: center;
-  padding: 50px 0px 50px 0px;
-  background: white; }
+  background: white;
+  overflow: hidden;
+  margin: none; }
+  @media (max-width: 500px) {
+    .pain-control {
+      padding-bottom: 0px; } }
   .pain-control h1 {
     color: #6d9ee1;
     margin-bottom: 50px; }
@@ -2647,6 +2658,18 @@ input[id*=rg] {
     max-width: 1000px;
     margin: auto;
     padding: 30px; }
+    @media (max-width: 500px) {
+      .pain-control .pain-control-flexbox {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column; } }
     .pain-control .pain-control-flexbox .pain-control-button {
       background: rgba(109, 158, 225, 0.5);
       border-radius: 50px;
@@ -2681,6 +2704,13 @@ input[id*=rg] {
       font-size: 15px;
       text-align: justify;
       font-family: "Open sans", sans-serif; }
+      @media (max-width: 500px) {
+        .pain-control .pain-control-text-1 p,
+        .pain-control .pain-control-text-2 p,
+        .pain-control .pain-control-text-3 p,
+        .pain-control .pain-control-text-4 p,
+        .pain-control .pain-control-text-5 p {
+          max-width: 100%; } }
     .pain-control .pain-control-text-1 video,
     .pain-control .pain-control-text-2 video,
     .pain-control .pain-control-text-3 video,
@@ -2689,6 +2719,13 @@ input[id*=rg] {
       float: left;
       margin-right: 20px;
       width: 300px; }
+      @media (max-width: 500px) {
+        .pain-control .pain-control-text-1 video,
+        .pain-control .pain-control-text-2 video,
+        .pain-control .pain-control-text-3 video,
+        .pain-control .pain-control-text-4 video,
+        .pain-control .pain-control-text-5 video {
+          width: 50%; } }
   .pain-control #pcr-1:checked ~ .pain-control-text-1 {
     height: auto;
     padding: 30px; }
@@ -2726,15 +2763,18 @@ input[id*=rg] {
   padding: 30px;
   margin: none;
   position: relative;
-  top: 90px;
+  top: 60px;
   text-align: center;
   color: white;
   font-family: "Open sans", sans-serif;
   background: #6d9ee1; }
+  @media (max-width: 500px) {
+    .no-ag {
+      min-height: 800px; } }
   .no-ag .no-ag-flexbox {
     width: 90%;
     margin: auto;
-    height: 100%;
+    height: auto;
     padding: none;
     margin: none;
     display: -webkit-box;
@@ -2773,11 +2813,26 @@ input[id*=rg] {
     flex-direction: row;
     -ms-flex-direction: row;
     top: 55%; }
+    @media (max-width: 500px) {
+      .no-ag .no-ag-flexbox {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column; } }
     .no-ag .no-ag-flexbox .no-ag-video {
       position: relative;
       height: 300px;
       width: 50%;
       padding: 20px; }
+      @media (max-width: 500px) {
+        .no-ag .no-ag-flexbox .no-ag-video {
+          width: 80%; } }
       .no-ag .no-ag-flexbox .no-ag-video video {
         width: 95%;
         border-radius: 7px;
@@ -2787,6 +2842,9 @@ input[id*=rg] {
       height: 300px;
       width: 50%;
       padding: 20px; }
+      @media (max-width: 500px) {
+        .no-ag .no-ag-flexbox .no-ag-text {
+          width: 100%; } }
       .no-ag .no-ag-flexbox .no-ag-text p {
         font-family: "Open sans", sans-serif;
         text-align: left;
@@ -2801,11 +2859,14 @@ input[id*=rg] {
   padding: 30px;
   margin: none;
   position: relative;
-  top: 90px;
+  top: 60px;
   text-align: center;
   color: #6d9ee1;
   font-family: "Open sans", sans-serif;
   background: white; }
+  @media (max-width: 500px) {
+    .indic-med {
+      min-height: 800px; } }
   .indic-med .indic-med-flexbox {
     width: 90%;
     margin: auto;
@@ -2848,11 +2909,26 @@ input[id*=rg] {
     flex-direction: row;
     -ms-flex-direction: row;
     top: 55%; }
+    @media (max-width: 500px) {
+      .indic-med .indic-med-flexbox {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column; } }
     .indic-med .indic-med-flexbox .indic-med-video {
       position: relative;
       height: 300px;
       width: 50%;
       padding: 20px; }
+      @media (max-width: 500px) {
+        .indic-med .indic-med-flexbox .indic-med-video {
+          width: 80%; } }
       .indic-med .indic-med-flexbox .indic-med-video video {
         width: 95%;
         border-radius: 7px;
@@ -2862,6 +2938,10 @@ input[id*=rg] {
       height: 300px;
       width: 50%;
       padding: 20px; }
+      @media (max-width: 500px) {
+        .indic-med .indic-med-flexbox .indic-med-text {
+          width: 100%;
+          order: 2; } }
       .indic-med .indic-med-flexbox .indic-med-text p {
         font-family: "Open sans", sans-serif;
         text-align: left;
@@ -2872,8 +2952,8 @@ input[id*=rg] {
 
 .benefices-to-risques {
   position: relative;
-  top: 90px;
-  padding: 50px;
+  top: 60px;
+  padding: 0px 50px;
   margin-bottom: 90px;
   width: 100%;
   text-align: center;
@@ -2883,6 +2963,9 @@ input[id*=rg] {
     font-size: 20px;
     font-family: "Open sans", sans-serif;
     margin-bottom: 30px; }
+    @media (max-width: 500px) {
+      .benefices-to-risques p {
+        font-size: 15px; } }
   .benefices-to-risques a {
     display: inline-block;
     color: #6d9ee1;
@@ -2892,6 +2975,10 @@ input[id*=rg] {
     line-height: 50px;
     border: 4px solid #6d9ee1;
     border-radius: 7px; }
+    @media (max-width: 500px) {
+      .benefices-to-risques a {
+        width: 80%;
+        font-size: 20px; } }
     .benefices-to-risques a:hover {
       background: #6d9ee1;
       color: white;
@@ -2912,7 +2999,7 @@ input[id*=rg] {
 .pain-control-2 {
   width: 100%;
   position: relative;
-  top: 90px;
+  top: 60px;
   text-align: center;
   padding: 60px 30px;
   background-image: url("../../img/benefice.jpg");
@@ -2936,8 +3023,7 @@ input[id*=rg] {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    background-color: black;
-    filter: opacity(0.6); }
+    background-color: rgba(0, 0, 0, 0.6); }
   .pain-control-2 .pain-control-bar {
     position: relative;
     text-align: center;
@@ -3090,6 +3176,18 @@ input[id*=rg] {
     align-items: center;
     -ms-flex-align: center;
     margin-top: 50px; }
+    @media (max-width: 500px) {
+      .pain-control-2 .pain-control-text-flex {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column; } }
     .pain-control-2 .pain-control-text-flex .pain-control-text-left {
       width: 40%;
       text-align: left; }
@@ -3105,6 +3203,14 @@ input[id*=rg] {
         position: absolute;
         left: 0%;
         line-height: 30px; }
+      @media (max-width: 500px) {
+        .pain-control-2 .pain-control-text-flex .pain-control-text-left {
+          width: 100%;
+          margin-bottom: 15px; }
+          .pain-control-2 .pain-control-text-flex .pain-control-text-left::before {
+            top: -4%;
+            left: 50%;
+            transform: translateX(-50%); } }
       .pain-control-2 .pain-control-text-flex .pain-control-text-left a {
         color: inherit;
         text-decoration: underline; }
@@ -3125,6 +3231,14 @@ input[id*=rg] {
         position: absolute;
         left: 50%;
         line-height: 30px; }
+      @media (max-width: 500px) {
+        .pain-control-2 .pain-control-text-flex .pain-control-text-right {
+          width: 100%;
+          margin-top: 10px; }
+          .pain-control-2 .pain-control-text-flex .pain-control-text-right::before {
+            top: 48%;
+            left: 50%;
+            transform: translateX(-50%); } }
       .pain-control-2 .pain-control-text-flex .pain-control-text-right em {
         color: #6d9ee1; }
 
@@ -3365,7 +3479,8 @@ input[id*=rg] {
   text-align: center;
   padding: 50px 0px 50px 0px;
   background: #6d9ee1;
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+  overflow: hidden; }
   .risque-control h1 {
     color: white;
     margin-bottom: 50px; }
@@ -3398,6 +3513,27 @@ input[id*=rg] {
     max-width: 1000px;
     margin: auto;
     padding: 30px; }
+    @media (max-width: 500px) {
+      .risque-control .risque-control-flexbox {
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: justify;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-direction: column; } }
     .risque-control .risque-control-flexbox .risque-control-button {
       background: rgba(255, 255, 255, 0.5);
       border-radius: 50px;
@@ -3432,6 +3568,12 @@ input[id*=rg] {
       letter-spacing: 0.1rem;
       text-align: justify;
       font-family: "Open sans", sans-serif; }
+      @media (max-width: 500px) {
+        .risque-control .risque-control-text-9 p,
+        .risque-control .risque-control-text-6 p,
+        .risque-control .risque-control-text-7 p,
+        .risque-control .risque-control-text-8 p {
+          max-width: 100%; } }
     .risque-control .risque-control-text-9 span,
     .risque-control .risque-control-text-6 span,
     .risque-control .risque-control-text-7 span,
@@ -3445,6 +3587,12 @@ input[id*=rg] {
       margin-bottom: 20px;
       border-radius: 7px;
       box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.25); }
+      @media (max-width: 500px) {
+        .risque-control .risque-control-text-9 video,
+        .risque-control .risque-control-text-6 video,
+        .risque-control .risque-control-text-7 video,
+        .risque-control .risque-control-text-8 video {
+          width: 50%; } }
   .risque-control #pcr-6:checked ~ .risque-control-text-6 {
     height: auto;
     padding: 30px; }
@@ -3538,6 +3686,8 @@ input[id*=rg] {
       min-height: 600px; } }
   @media (max-width: 650px) {
     .nous-text {
+      top: 70px;
+      min-height: 750px;
       background-attachment: scroll; }
       .nous-text .nous-overlay h2 {
         font-size: 20px; }

@@ -1,11 +1,15 @@
 .pain-control
   width: 100%
-  min-height: 600px
+  height: auto
+  padding: 50px 0px 50px 0px
   position: relative
   top: 90px
   text-align: center
-  padding: 50px 0px 50px 0px
   background: white
+  overflow: hidden
+  margin: none
+  @media (max-width: 500px)
+    padding-bottom: 0px
 
   h1
     color: $bleu-lavande
@@ -18,6 +22,8 @@
     max-width: 1000px
     margin: auto
     padding: 30px
+    @media (max-width: 500px)
+      +flex-direction(column)
 
     .pain-control-button
       background: transparentize($bleu-lavande, 0.5)
@@ -48,10 +54,14 @@
       font-size: 15px
       text-align: justify
       font-family: $Opensans
+      @media (max-width: 500px)
+        max-width: 100%
     video
       float: left
       margin-right: 20px
       width: 300px
+      @media (max-width: 500px)
+        width: 50%
   @for $i from 1 through 5
     #pcr-#{$i}:checked
       ~ .pain-control-text-#{$i}

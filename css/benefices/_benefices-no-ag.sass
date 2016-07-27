@@ -4,16 +4,19 @@
   padding: 30px
   margin: none
   position: relative
-  top: 90px
+  top: 60px
   text-align: center
   color: white
   font-family: $Opensans
   background: $bleu-lavande
+  @media (max-width: 500px)
+    min-height: 800px
+
 
   .no-ag-flexbox
     width: 90%
     margin: auto
-    height: 100%
+    height: auto
     padding: none
     margin: none
     +display(flex)
@@ -22,6 +25,8 @@
     +flex-direction(row)
     @extend %centering
     top: 55%
+    @media (max-width: 500px)
+      +flex-direction(column)
 
     .no-ag-video
       position: relative
@@ -29,6 +34,8 @@
       width: 50%
       padding: 20px
       //background: $bleu-lavande
+      @media (max-width: 500px)
+        width: 80%
       video
         @extend %centering
         width: 95%
@@ -40,6 +47,8 @@
       width: 50%
       padding: 20px
       //background: $bleu-lavande
+      @media (max-width: 500px)
+        width: 100%
       p
         font-family: $Opensans
         text-align: left
