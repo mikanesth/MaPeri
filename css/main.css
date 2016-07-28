@@ -2660,16 +2660,14 @@ input[id*=rg] {
     padding: 30px; }
     @media (max-width: 500px) {
       .pain-control .pain-control-flexbox {
-        -webkit-box-orient: vertical;
-        -moz-box-orient: vertical;
-        box-orient: vertical;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        box-direction: normal;
-        -webkit-flex-direction: column;
-        -moz-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-direction: column; } }
+        -webkit-box-lines: multiple;
+        -moz-box-lines: multiple;
+        box-lines: multiple;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0px 10px 20px 10px; } }
     .pain-control .pain-control-flexbox .pain-control-button {
       background: rgba(109, 158, 225, 0.5);
       border-radius: 50px;
@@ -2680,6 +2678,9 @@ input[id*=rg] {
       .pain-control .pain-control-flexbox .pain-control-button:hover {
         background-color: #6d9ee1;
         box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.25); }
+      @media (max-width: 500px) {
+        .pain-control .pain-control-flexbox .pain-control-button {
+          width: 49%; } }
   .pain-control input[type=radio] {
     display: none; }
   .pain-control .pain-control-text-1,
@@ -3515,25 +3516,14 @@ input[id*=rg] {
     padding: 30px; }
     @media (max-width: 500px) {
       .risque-control .risque-control-flexbox {
-        -webkit-box-pack: justify;
-        -moz-box-pack: justify;
-        box-pack: justify;
-        -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-        -ms-justify-content: space-between;
-        -o-justify-content: space-between;
-        justify-content: space-between;
-        -ms-flex-pack: justify;
-        -webkit-box-orient: vertical;
-        -moz-box-orient: vertical;
-        box-orient: vertical;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        box-direction: normal;
-        -webkit-flex-direction: column;
-        -moz-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-direction: column; } }
+        -webkit-box-lines: multiple;
+        -moz-box-lines: multiple;
+        box-lines: multiple;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0px 10px 20px 10px; } }
     .risque-control .risque-control-flexbox .risque-control-button {
       background: rgba(255, 255, 255, 0.5);
       border-radius: 50px;
@@ -3544,6 +3534,9 @@ input[id*=rg] {
       .risque-control .risque-control-flexbox .risque-control-button:hover {
         background-color: white;
         box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.25); }
+      @media (max-width: 500px) {
+        .risque-control .risque-control-flexbox .risque-control-button {
+          width: 49%; } }
   .risque-control input[type=radio] {
     display: none; }
   .risque-control .risque-control-text-9,
