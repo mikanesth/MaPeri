@@ -934,9 +934,9 @@ footer {
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        -webkit-transition: 800ms;
-        -moz-transition: 800ms;
-        transition: 800ms; }
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        transition: 300ms; }
       .img-section .img-container .img .img-overlay {
         position: absolute;
         top: 100%;
@@ -947,9 +947,9 @@ footer {
         color: white;
         padding-top: 8%;
         opacity: 0;
-        -webkit-transition: 500ms;
-        -moz-transition: 500ms;
-        transition: 500ms;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        transition: 300ms;
         font-family: "Open sans", sans-serif;
         overflow: hidden; }
         .img-section .img-container .img .img-overlay p {
