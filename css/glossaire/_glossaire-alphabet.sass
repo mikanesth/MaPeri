@@ -36,6 +36,21 @@
     text-transform: uppercase
     color: $bleu-lavande
     font-family: $Opensans
+    //border-top: solid transparentize($bleu-lavande, 0.6) 1px
+    @media (min-width: 600px)
+      min-height: 50px
+      margin-top: 8px
+  .col-sm-10
+    position: relative
+    @media (min-width: 600px)
+      padding-left: 40px
+      min-height: 50px
+      margin-top: 8px
+      p
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+
 
 .glossaire-content-placeholder
   width: 90%

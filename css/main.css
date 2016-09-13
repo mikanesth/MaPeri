@@ -2296,6 +2296,21 @@ footer {
     text-transform: uppercase;
     color: #6d9ee1;
     font-family: "Open sans", sans-serif; }
+    @media (min-width: 600px) {
+      [class*=glossaire-content] .col-sm-2 {
+        min-height: 50px;
+        margin-top: 8px; } }
+  [class*=glossaire-content] .col-sm-10 {
+    position: relative; }
+    @media (min-width: 600px) {
+      [class*=glossaire-content] .col-sm-10 {
+        padding-left: 40px;
+        min-height: 50px;
+        margin-top: 8px; }
+        [class*=glossaire-content] .col-sm-10 p {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); } }
 
 .glossaire-content-placeholder {
   width: 90%;
