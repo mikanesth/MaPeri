@@ -53,7 +53,7 @@
     .floater-right {
       width: 100%;
       float: none; } }
-  @media (max-width: 775px) {
+  @media (max-width: 815px) {
     .floater-right {
       padding-top: 70px; } }
 
@@ -422,7 +422,7 @@ header {
   @media (max-width: 600px) {
     header {
       -webkit-backdrop-filter: none; } }
-  @media (max-width: 775px) {
+  @media (max-width: 815px) {
     header {
       height: 70px; } }
   header nav {
@@ -469,6 +469,10 @@ header {
       header nav .drop-menu:hover {
         height: 200px;
         padding: 20px; }
+      @media (max-width: 850px) {
+        header nav .drop-menu {
+          width: 250px;
+          top: 70px; } }
       header nav .drop-menu a {
         display: block;
         width: 90%;
@@ -492,7 +496,7 @@ header {
   background-color: rgba(109, 158, 225, 0.8);
   backdrop-filter: blur(5px);
   z-index: 23; }
-  @media (max-width: 775px) {
+  @media (max-width: 815px) {
     .back-header {
       height: 70px; } }
 
@@ -561,7 +565,10 @@ header {
     text-decoration: none;
     color: white; }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
+  header nav a {
+    font-size: 15px; } }
+@media (max-width: 750px) {
   header nav {
     display: none; }
 
@@ -585,7 +592,7 @@ header {
     clear: both;
     content: "";
     display: table; }
-  @media (max-width: 775px) {
+  @media (max-width: 815px) {
     .blue-header {
       height: 70px; } }
 
@@ -2149,7 +2156,7 @@ footer {
   top: 90px;
   overflow: hidden;
   margin-bottom: 90px; }
-  @media (max-width: 775px) {
+  @media (max-width: 815px) {
     .glossaire-header {
       top: 70px; } }
   .glossaire-header .glossaire-img {
@@ -2531,7 +2538,7 @@ input[id*=rg] {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
-  @media (max-width: 775px) {
+  @media (max-width: 815px) {
     .benefices-jumbo {
       top: 70px; } }
   .benefices-jumbo h1 {
@@ -3653,6 +3660,9 @@ input[id*=rg] {
   @media (max-width: 900px) {
     .nous-text {
       min-height: 600px; } }
+  @media (max-width: 815px) {
+    .nous-text {
+      top: 70px; } }
   @media (max-width: 650px) {
     .nous-text {
       top: 70px;
