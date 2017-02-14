@@ -104,6 +104,16 @@
             <img class="who-img" src="img/icon/fa-user.svg"></img>
             <p>Sage-Femme</p>
           </div>
+          <div class="who-item4">
+            <div class="who-overlay">
+              <h4 style="color: black">L'accompagnant(e)</h4>
+              <p>Evidemment présent(e) avec vous tout au long du travail, il
+                peut cependant parfois etre demandé à votre accompagnant(e) de sortir
+                pendant la réalisaiton de la péridurale.</p>
+            </div>
+            <img class="who-img" src="img/icon/fa-user-2.svg"></img>
+            <p>L'accompagnant(e)</p>
+          </div>
           <div class="who-item3">
             <div class="who-overlay">
               <h4 style="color: black">Infirmier Anesthésiste</h4>
@@ -206,7 +216,8 @@
         <h2>Evolution des douleurs</h2>
         <p style="max-width: 1000px; margin: auto; color: rgba(0,0,0,0.7); margin-bottom: 40px">Dans cette partie, vous pouvez, en cliquant sur "Voir douleurs avec péridurale" vous représenter l'évolution des douleurs attendue avec la pose de votre péridurale. Ces données reposent sur une étude réalisée
         au CHU de Tours auprès de femmes enceintes comme vous. Elles représentent les douleurs cotées sur une échelle de 0 à 10 et leur évolution avec la péridurale. </p>
-        <label for="pain-check" class="pain-trigger"><span>Voir douleurs avec péridurale</span><em>Voir douleurs sans péridurale</em></label>
+        <h3 id="sans-peri">Niveaux des douleurs sans péridurale</h3>
+        <h3 id="avec-peri">Niveaux des douleurs avec péridurale</h3>
         <div class="pain-content">
           <div class="pain-box">
             <p>Toucher vaginal</p>
@@ -216,7 +227,6 @@
             <p>Pose de péridurale</p>
             <div class="pain-bar-peri"></div>
           </div>
-
           <div class="pain-box">
             <p>Contractions utérines</p>
             <div class="pain-bar-cont"></div>
@@ -226,6 +236,7 @@
             <div class="pain-bar-episio"></div>
           </div>
         </div>
+        <label for="pain-check" class="pain-trigger"><span>Voir évolution avec péridurale</span><em>Voir douleurs sans péridurale</em></label>
       </section>
       <!-- @import "includes/deroulement/after.kit" -->
 

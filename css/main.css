@@ -413,6 +413,7 @@ header {
   text-align: center;
   padding-top: 25px;
   align-content: center;
+  box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.3);
   z-index: 25;
   -webkit-backdrop-filter: blur(4px); }
   header::after {
@@ -456,7 +457,8 @@ header {
       text-align: center;
       top: 90px;
       display: block;
-      background: #6d9ee1;
+      background-color: rgba(109, 158, 225, 0.8);
+      -webkit-backdrop-filter: blur(4px);
       box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
       width: 300px;
       overflow: hidden;
@@ -1208,6 +1210,7 @@ footer {
     background: #6d9ee1;
     position: absolute;
     left: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     transform: translateX(-20%) rotate(45deg);
     height: 2000px;
     width: 2000px; }
@@ -1220,6 +1223,7 @@ footer {
     position: absolute;
     right: 100%;
     top: 2000px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     transform: translateX(40%) rotate(45deg);
     height: 2000px;
     width: 2000px; }
@@ -1523,6 +1527,12 @@ footer {
     text-align: center; }
   .pain-evolution h3 {
     color: #6d9ee1; }
+  .pain-evolution #sans-peri {
+    display: block;
+    color: rgba(0, 0, 0, 0.5); }
+  .pain-evolution #avec-peri {
+    display: none;
+    color: rgba(0, 0, 0, 0.5); }
   .pain-evolution .pain-trigger {
     background: rgba(109, 158, 225, 0.8);
     padding: 10px 20px 10px 20px;
@@ -1555,6 +1565,10 @@ footer {
       width: 25%; }
     .pain-evolution .pain-check:checked ~ .pain-content .pain-box .pain-bar-episio {
       width: 13%; }
+    .pain-evolution .pain-check:checked ~ #sans-peri {
+      display: none; }
+    .pain-evolution .pain-check:checked ~ #avec-peri {
+      display: block; }
   .pain-evolution .pain-content {
     text-align: left;
     position: relative;
@@ -1616,7 +1630,7 @@ footer {
       justify-content: center;
       -ms-flex-pack: center;
       width: 45%;
-      min-height: 300px; }
+      min-height: 200px; }
       .pain-evolution .pain-content .pain-box p {
         border-bottom: 1px solid #6d9ee1;
         margin-bottom: 0;
@@ -1727,10 +1741,17 @@ footer {
         z-index: 10;
         border-radius: 10px;
         padding: 10px; }
+        @media (max-width: 1000px) {
+          .who .who-flex [class*="who-item"] .who-overlay {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px; } }
         @media (max-width: 600px) {
           .who .who-flex [class*="who-item"] .who-overlay {
-            right: 10%;
-            left: 10%; } }
+            left: 10%;
+            right: 10%; } }
       .who .who-flex [class*="who-item"] .who-img {
         height: 150px;
         width: 150px;
@@ -1743,6 +1764,11 @@ footer {
       order: 2; }
     .who .who-flex .who-item2 {
       order: 3; }
+    .who .who-flex .who-item4 {
+      order: 4;
+      color: red; }
+      .who .who-flex .who-item4 .who-img {
+        border-color: red; }
 
 .sensations {
   position: relative;
@@ -3511,7 +3537,7 @@ input[id*=rg] {
       background: rgba(255, 255, 255, 0.5);
       border-radius: 50px;
       padding: 10px;
-      min-width: 20%;
+      min-width: 15%;
       color: #6d9ee1;
       font-family: "Open sans", sans-serif; }
       .risque-control .risque-control-flexbox .risque-control-button:hover {
@@ -3525,7 +3551,8 @@ input[id*=rg] {
   .risque-control .risque-control-text-9,
   .risque-control .risque-control-text-6,
   .risque-control .risque-control-text-7,
-  .risque-control .risque-control-text-8 {
+  .risque-control .risque-control-text-8,
+  .risque-control .risque-control-text-10 {
     width: 100%;
     height: 0px;
     overflow: hidden;
@@ -3537,7 +3564,8 @@ input[id*=rg] {
     .risque-control .risque-control-text-9 p,
     .risque-control .risque-control-text-6 p,
     .risque-control .risque-control-text-7 p,
-    .risque-control .risque-control-text-8 p {
+    .risque-control .risque-control-text-8 p,
+    .risque-control .risque-control-text-10 p {
       max-width: 70%;
       margin: auto;
       font-size: 15px;
@@ -3548,17 +3576,20 @@ input[id*=rg] {
         .risque-control .risque-control-text-9 p,
         .risque-control .risque-control-text-6 p,
         .risque-control .risque-control-text-7 p,
-        .risque-control .risque-control-text-8 p {
+        .risque-control .risque-control-text-8 p,
+        .risque-control .risque-control-text-10 p {
           max-width: 100%; } }
     .risque-control .risque-control-text-9 span,
     .risque-control .risque-control-text-6 span,
     .risque-control .risque-control-text-7 span,
-    .risque-control .risque-control-text-8 span {
+    .risque-control .risque-control-text-8 span,
+    .risque-control .risque-control-text-10 span {
       color: white; }
     .risque-control .risque-control-text-9 video,
     .risque-control .risque-control-text-6 video,
     .risque-control .risque-control-text-7 video,
-    .risque-control .risque-control-text-8 video {
+    .risque-control .risque-control-text-8 video,
+    .risque-control .risque-control-text-10 video {
       width: 30%;
       margin-bottom: 20px;
       border-radius: 7px;
@@ -3567,7 +3598,8 @@ input[id*=rg] {
         .risque-control .risque-control-text-9 video,
         .risque-control .risque-control-text-6 video,
         .risque-control .risque-control-text-7 video,
-        .risque-control .risque-control-text-8 video {
+        .risque-control .risque-control-text-8 video,
+        .risque-control .risque-control-text-10 video {
           width: 50%; } }
   .risque-control #pcr-6:checked ~ .risque-control-text-6 {
     height: auto;
@@ -3591,6 +3623,12 @@ input[id*=rg] {
     height: auto;
     padding: 30px; }
   .risque-control #pcr-9:checked ~ .risque-control-flexbox .rcb9 {
+    background-color: white;
+    box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.25); }
+  .risque-control #pcr-10:checked ~ .risque-control-text-10 {
+    height: auto;
+    padding: 30px; }
+  .risque-control #pcr-10:checked ~ .risque-control-flexbox .rcb10 {
     background-color: white;
     box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.25); }
   .risque-control .maj {

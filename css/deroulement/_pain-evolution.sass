@@ -16,6 +16,14 @@
 
   h3
     color: $bleu-lavande
+  #sans-peri
+    display: block
+    color: transparentize($filtre-noir, 0.2)
+    //margin-bottom: -30px
+  #avec-peri
+    display: none
+    color: transparentize($filtre-noir, 0.2)
+    //margin-bottom: -30px
 
   .pain-trigger
     background: $bleu_lavande_blur
@@ -53,6 +61,10 @@
             width: 25%
           .pain-bar-episio
             width: 13%
+      ~ #sans-peri
+        display: none
+      ~ #avec-peri
+        display: block
   .pain-content
     text-align: left
     position: relative
@@ -72,7 +84,7 @@
       +flex-direction(column)
       +justify-content(center)
       width: 45%
-      min-height: 300px
+      min-height: 200px
 
 
       p

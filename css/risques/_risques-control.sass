@@ -29,7 +29,7 @@
       background: transparentize(white, 0.5)
       border-radius: 50px
       padding: 10px
-      min-width: 20%
+      min-width: 15%
       color: $bleu-lavande
       font-family: $Opensans
       &:hover
@@ -43,7 +43,8 @@
   .risque-control-text-9,
   .risque-control-text-6,
   .risque-control-text-7,
-  .risque-control-text-8
+  .risque-control-text-8,
+  .risque-control-text-10
     width: 100%
     height: 0px
     overflow: hidden
@@ -68,7 +69,7 @@
       box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.25)
       @media (max-width: 500px)
         width: 50%
-  @for $i from 6 through 9
+  @for $i from 6 through 10
     #pcr-#{$i}:checked
       ~ .risque-control-text-#{$i}
         height: auto
