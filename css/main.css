@@ -1201,6 +1201,52 @@ footer {
     background-size: 100% 100%;
     background-image: url(../img/bg_welcome.jpg);
     background-repeat: no-repeat; } }
+#popup-close {
+  display: none; }
+  #popup-close:checked ~ .popup {
+    display: none; }
+
+.popup {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 35;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .popup .popup-window {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px black;
+    z-index: 36;
+    max-width: 50%;
+    min-height: 35vh;
+    margin: auto;
+    background: white;
+    top: 50vh;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    @media (max-width: 700px) {
+      .popup .popup-window {
+        max-width: 80%; }
+        .popup .popup-window h1 {
+          font-size: 20px; } }
+    .popup .popup-window h1 {
+      text-transform: uppercase;
+      width: 100%; }
+    .popup .popup-window .popup-btn {
+      background: #6d9ee1;
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+      color: white; }
+
 .faq-cont {
   position: relative;
   padding-top: 90px;
@@ -3774,3 +3820,20 @@ input[id*=rg] {
   .resultats #tipue_search_content {
     max-width: 70%;
     margin: auto; }
+
+.gform-link {
+  background: red;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 5px 8px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: -50px; }
+  .gform-link:hover {
+    border: none;
+    box-shadow: 1px 2px 8px black;
+    color: rgba(252, 252, 252, 0.7);
+    text-decoration: none; }
+  .gform-link:active {
+    top: 2px; }
